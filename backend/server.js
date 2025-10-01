@@ -16,15 +16,16 @@ app.use(cors());
 app.use(express.json({ limit: '2mb' }));
 
 const PORT = process.env.PORT || 4000;
+const HOST = "0.0.0.0";
 const SESSIONS_FILE = path.join(__dirname, 'sessions.json');
+const publicDir = path.join(__dirname, 'public'); // static build dir
 
-// helpers to read/write sessions file
+// --- session helpers ---
 async function loadSessions() {
   try {
     const txt = await fs.readFile(SESSIONS_FILE, 'utf8');
     return JSON.parse(txt || '[]');
-  } catch (e) {
-    // if file missing or parse error, return empty list
+  } catch {
     return [];
   }
 }
@@ -50,9 +51,8 @@ function extractName(text) {
   return lines[0];
 }
 
-// multer setup
+// --- upload resume endpoint ---
 const upload = multer({ limits: { fileSize: 5 * 1024 * 1024 } }); // 5MB
-
 app.post('/upload-resume', upload.single('resume'), async (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ ok: false, error: 'No file uploaded' });
@@ -110,7 +110,7 @@ function annotateQuestions(aiQuestions = []) {
   });
 }
 
-// --- Gemini helpers (if GEMINI key present) ---
+// --- Gemini helpers ---
 const GEMINI_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || '';
 const GEMINI_MODEL_SHORT = (process.env.GEMINI_MODEL || 'gemini-2.5-flash').replace(/^models\//, '');
 
@@ -145,7 +145,7 @@ ${resumeText}
     } else {
       rawText = JSON.stringify(raw);
     }
-  } catch (e) {
+  } catch {
     rawText = JSON.stringify(raw);
   }
 
@@ -158,13 +158,13 @@ ${resumeText}
     const parsed = JSON.parse(body);
     if (!Array.isArray(parsed)) return [];
     return parsed;
-  } catch (err) {
+  } catch {
     console.warn('Gemini questions parse failed. Raw preview:', rawText.slice(0, 500));
     return [];
   }
 }
 
-// --- generate-questions endpoint ---
+// --- generate questions endpoint ---
 app.post('/generate-questions', async (req, res) => {
   try {
     const { role = 'fullstack', resumeText = '' } = req.body || {};
@@ -377,26 +377,21 @@ app.delete('/sessions/:id', async (req, res) => {
   return res.json({ ok: true, removed: before - sessions.length });
 });
 
-// health check (NOTE: placed before static fallback)
+// --- health check ---
 app.get('/health', (req, res) => res.json({ ok: true }));
 
-// --- Serve static frontend build (if available) ---
-// Public dir: ./public (expects frontend build copied there)
-const publicDir = path.join(__dirname, 'public');
-
+// --- static frontend serving ---
 (async () => {
   try {
     await fs.access(path.join(publicDir, 'index.html'));
     console.log('Static frontend detected at ./public — SPA will be served.');
-  } catch (err) {
+  } catch {
     console.log('No static frontend found in ./public (expected frontend build). API endpoints still available.');
   }
 })();
 
-// express static + SPA fallback
 app.use(express.static(publicDir));
 
-// List of API path prefixes to skip in SPA fallback
 const API_PREFIXES = [
   '/upload-resume',
   '/generate-questions',
@@ -404,26 +399,25 @@ const API_PREFIXES = [
   '/submit-session',
   '/sessions',
   '/health',
-  '/api' // for future-proofing
+  '/api'
 ];
 
 app.get('*', (req, res, next) => {
-  // If the request path starts with any of the API prefixes, pass control to next() (so it receives 404 or the correct handler)
   for (const p of API_PREFIXES) {
     if (req.path.startsWith(p)) return next();
   }
-  // otherwise serve index.html so client-side router can handle it
-  res.sendFile(path.join(publicDir, 'index.html'), (err) => {
-    if (err) {
-      // If file not found or other error, forward to express error handler
-      next(err);
-    }
+  res.sendFile(path.join(publicDir, 'index.html'), err => {
+    if (err) next(err);
   });
 });
 
-// start server
-app.listen(PORT, "0.0.0.0", () =>  {
-  console.log(`AI Interview Assistant - Backend running (port ${PORT})`);
-  if (!GEMINI_KEY) console.log('GEMINI_API_KEY not set; Gemini disabled (fallback static).');
-  else console.log('GEMINI_API_KEY present; attempting REST Gemini calls (contents/parts payload).');
+// --- start server ---
+app.listen(PORT, HOST, () => {
+  console.log(`AI Interview Assistant backend running at http://${HOST}:${PORT}`);
+  console.log(`Serving static files from: ${publicDir}`);
+  if (process.env.GEMINI_API_KEY) {
+    console.log("GEMINI_API_KEY is set");
+  } else {
+    console.log("GEMINI_API_KEY not set (API calls may fail)");
+  }
 });
