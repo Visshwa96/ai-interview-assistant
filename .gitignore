@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# build
+dist/
+build/
+
+# environment
+.env
+frontend/.env
+backend/.env
+
+# sessions
+backend/sessions.json
+
+# system files
+.DS_Store
+Thumbs.db
+*.log
