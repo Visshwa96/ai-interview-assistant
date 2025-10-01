@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Layout, Spin, Alert } from 'antd';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import TopNav from './components/Topnav';
+import TopNav from './components/TopNav';
 import InterviewPage from './pages/InterviewPage';
 import DashboardPage from './pages/DashboardPage';
 import './App.css';
