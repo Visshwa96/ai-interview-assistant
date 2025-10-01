@@ -422,7 +422,7 @@ app.get('*', (req, res, next) => {
 });
 
 // start server
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () =>  {
   console.log(`AI Interview Assistant - Backend running (port ${PORT})`);
   if (!GEMINI_KEY) console.log('GEMINI_API_KEY not set; Gemini disabled (fallback static).');
   else console.log('GEMINI_API_KEY present; attempting REST Gemini calls (contents/parts payload).');
