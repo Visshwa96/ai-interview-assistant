@@ -1,0 +1,962 @@
+[
+  {
+    "id": "s-1759297252692",
+    "createdAt": 1759297301630,
+    "candidate": {
+      "name": "GANDHAM GUNASHEKAR",
+      "email": "shekar.df7@gmail.com",
+      "phone": "+91 7075298758"
+    },
+    "questions": [
+      {
+        "id": "q-0",
+        "text": "Can you briefly explain the difference between frontend and backend development?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-1",
+        "text": "What is an API, and how does a fullstack application typically use it?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-2",
+        "text": "Describe a common challenge you might face when connecting a frontend application to a backend API, and how you would address it.",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-3",
+        "text": "When would you choose a NoSQL database over a SQL database for a fullstack project, and what are the trade-offs?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-4",
+        "text": "Imagine you're building a real-time chat application; what architectural considerations would you have for the backend to handle high concurrency and scalability?",
+        "difficulty": "hard",
+        "timeLimit": 120
+      },
+      {
+        "id": "q-5",
+        "text": "How would you design a secure authentication and authorization system for a fullstack application, considering both web and potentially mobile clients?",
+        "difficulty": "hard",
+        "timeLimit": 120
+      }
+    ],
+    "answers": {
+      "0": {
+        "text": ""
+      },
+      "1": {
+        "text": ""
+      },
+      "2": {
+        "text": "ads"
+      },
+      "3": {
+        "text": "asds"
+      },
+      "4": {
+        "text": "asdsa"
+      },
+      "5": {
+        "text": "asds"
+      }
+    },
+    "aiResult": {
+      "perAnswer": [
+        {
+          "index": 1,
+          "score": 0,
+          "feedback": "No answer provided for this question."
+        },
+        {
+          "index": 2,
+          "score": 0,
+          "feedback": "No answer provided for this question."
+        },
+        {
+          "index": 3,
+          "score": 1,
+          "feedback": "The answer provided ('ads') was too brief and not relevant to the question asked."
+        },
+        {
+          "index": 4,
+          "score": 1,
+          "feedback": "The answer provided ('asds') was too brief and not relevant to the question asked."
+        },
+        {
+          "index": 5,
+          "score": 1,
+          "feedback": "The answer provided ('asdsa') was too brief and not relevant to the question asked."
+        },
+        {
+          "index": 6,
+          "score": 1,
+          "feedback": "The answer provided ('asds') was too brief and not relevant to the question asked."
+        }
+      ],
+      "overall": {
+        "score": 5,
+        "summary": "The candidate provided no substantial answers to any of the questions. Most answers were either empty or contained irrelevant, very short strings, making it impossible to assess their knowledge."
+      }
+    },
+    "completedAt": 1759297301630
+  },
+  {
+    "id": "s-1759297484355",
+    "createdAt": 1759297547715,
+    "candidate": {
+      "name": "GANDHAM GUNASHEKAR",
+      "email": "shekar.df7@gmail.com",
+      "phone": "+91 7075298758"
+    },
+    "questions": [
+      {
+        "id": "q-0",
+        "text": "What are the key differences between client-side rendering (CSR) and server-side rendering (SSR)?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-1",
+        "text": "Explain what RESTful APIs are and list the common HTTP methods used in them.",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-2",
+        "text": "Describe the typical flow of data when a user submits a form in a fullstack application, from the frontend to the database and back.",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-3",
+        "text": "How do you handle authentication and authorization in a fullstack application, differentiating between the two concepts?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-4",
+        "text": "Design a scalable API endpoint for uploading and serving user-generated images, considering aspects like storage, processing, and retrieval.",
+        "difficulty": "hard",
+        "timeLimit": 600
+      },
+      {
+        "id": "q-5",
+        "text": "Discuss various strategies for ensuring high availability and fault tolerance in a distributed fullstack system.",
+        "difficulty": "hard",
+        "timeLimit": 450
+      }
+    ],
+    "answers": {
+      "0": {
+        "text": ""
+      },
+      "1": {
+        "text": "RESTful APIs, also known as REST APIs, are web services that adhere to the principles of the Representational State Transfer (REST) architectural style. REST is an architectural style for designing networked applications, emphasizing a stateless client-server communication model. In essence, RESTful APIs enable communication between different systems over the internet by using standard HTTP methods to perform operations on resources, which are identified by Uniform Resource Identifiers (URIs).\nKey characteristics of RESTful APIs include:\nStatelessness: Each request from a client to a server must contain all the information needed to understand the request, as the server does not store any client context between requests.\nClient-Server Architecture: The client and server are separate entities, allowing for independent development and evolution.\nCacheability: Responses can be explicitly or implicitly marked as cacheable to improve performance.\nLayered System: A client cannot typically tell whether it is connected directly to the end server or to an intermediary.\nUniform Interface: This is a crucial constraint, simplified by using standard HTTP methods for interacting with resources.\nCommon HTTP Methods Used in RESTful APIs:\nThe most commonly used HTTP methods in RESTful APIs correspond to Create, Read, Update, and Delete (CRUD) operations on resources:\nGET: Used to retrieve data or a representation of a resource from the server. GET requests should be safe (not alter the server's state) and idempotent (multiple identical requests have the same effect as a single one)."
+      },
+      "2": {
+        "text": "The typical data flow when a user submits a form in a fullstack application involves several stages, moving from the user interface to the database and then back to the user.\nFrontend Interaction and Data Capture:\nThe user interacts with a form displayed on the frontend (e.g., a web browser or mobile app).\nUpon submission (e.g., clicking a \"Submit\" button), the frontend captures the data entered into the form fields.\nThis data is often packaged into a structured format, such as JSON or URL-encoded form data.\nFrontend to Backend Request:\nThe frontend sends an HTTP request (typically a POST request) containing the captured form data to a specific endpoint on the backend server.\nThis request is usually made using a client-side technology like JavaScript's fetch API or XMLHttpRequest, or a library like Axios.\nBackend Processing and Validation:\nThe backend server receives the HTTP request and extracts the form data.\nIt performs server-side validation to ensure the data is complete, correctly formatted, and adheres to business rules. This is crucial for security and data integrity.\nIf validation fails, the backend sends an error response back to the frontend.\nDatabase Interaction:\nIf validation passes, the backend's business logic processes the data.\nIt then interacts with the database (e.g., using an Object-Relational Mapper or direct SQL queries) to store, update, or retrieve information based on the form submission.\nFor example, a user registration form would lead to a new user record being inserted into a users table.\nBackend Response Generation:\nAfter interacting with the database, the backend generates a response.\nThis response might indicate success or failure, provide newly created data (e.g., a new user ID), or return updated information.\nThe response is typically formatted in JSON.\nBackend to Frontend Response:\nThe backend sends the generated response back to the frontend. \nFrontend Update and User Feedback:\nThe frontend receives the response from the backend.\nIt processes the response (e.g., parsing the JSON data).\nBased on the response, the frontend updates the user interface, providing feedback to the user (e.g., displaying a success message, showing validation errors, or redirecting to another page)."
+      },
+      "3": {
+        "text": "sfadf"
+      },
+      "4": {
+        "text": "adfadf"
+      },
+      "5": {
+        "text": "afadfd"
+      }
+    },
+    "aiResult": {
+      "perAnswer": [
+        {
+          "index": 1,
+          "score": 0,
+          "feedback": "No answer provided for this question."
+        },
+        {
+          "index": 2,
+          "score": 7,
+          "feedback": "Excellent explanation of RESTful API principles and characteristics. However, the list of common HTTP methods is incomplete, only listing GET."
+        },
+        {
+          "index": 3,
+          "score": 10,
+          "feedback": "A very clear, detailed, and accurate description of the data flow from frontend to backend and database, covering all critical stages including validation and user feedback."
+        },
+        {
+          "index": 4,
+          "score": 0,
+          "feedback": "No coherent answer provided for this question."
+        },
+        {
+          "index": 5,
+          "score": 0,
+          "feedback": "No coherent answer provided for this question."
+        },
+        {
+          "index": 6,
+          "score": 0,
+          "feedback": "No coherent answer provided for this question."
+        }
+      ],
+      "overall": {
+        "score": 28,
+        "summary": "The candidate provided strong answers for some questions (Q3) and a partially good answer for another (Q2). However, there were significant gaps in knowledge or no coherent answers for a majority of the questions (Q1, Q4, Q5, Q6), indicating a lack of comprehensive understanding across key fullstack concepts."
+      }
+    },
+    "completedAt": 1759297547712
+  },
+  {
+    "id": "s-1759298682988",
+    "createdAt": 1759298901854,
+    "candidate": {
+      "name": "GANDHAM GUNASHEKAR",
+      "email": "shekar.df7@gmail.com",
+      "phone": "+91 7075298758"
+    },
+    "questions": [
+      {
+        "id": "q-0",
+        "text": "Can you explain the fundamental differences between frontend and backend development in a web application?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-1",
+        "text": "What is an API, and what role does it play in fullstack development?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-2",
+        "text": "Describe the typical request-response cycle in a web application, from the browser to the server and back.",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-3",
+        "text": "How do you handle authentication and authorization in a fullstack application, and what are some common approaches?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-4",
+        "text": "Imagine you need to build a scalable microservices architecture. What are the key challenges you anticipate, and how would you address them?",
+        "difficulty": "hard",
+        "timeLimit": 120
+      },
+      {
+        "id": "q-5",
+        "text": "Discuss various strategies for optimizing database performance in a fullstack application, considering different types of queries and data volumes.",
+        "difficulty": "hard",
+        "timeLimit": 120
+      }
+    ],
+    "answers": {
+      "0": {
+        "text": ""
+      },
+      "1": {
+        "text": "An Application Programming Interface (API) is a set of defined rules and protocols that allow different software applications to communicate and interact with each other. It acts as an intermediary, enabling the exchange of data and functionalities between disparate systems. \nIn full-stack development, APIs play a crucial role in connecting the frontend (client-side) and backend (server-side) of an application.\nRole of APIs in Full-Stack Development:\nConnecting Frontend and Backend: APIs serve as the bridge between the user interface (developed with technologies like React, Angular, or Vue) and the server-side logic and database (developed with technologies like Node.js, Python/Django, or Java/Spring). The frontend sends requests to the backend via APIs to retrieve, create, update, or delete data, and the backend responds with the requested information.\nData Exchange and Functionality Exposure: APIs define how data is structured and exchanged between the client and server. They expose specific functionalities of the backend to the frontend, allowing the frontend to trigger actions or access resources without needing to understand the underlying server-side implementation details.\nModularity and Reusability: APIs promote modularity by allowing developers to build distinct, independent services that can be accessed and reused across different parts of an application or even in entirely different applications. This fosters efficient development and easier maintenance.\nIntegration with External Services: Full-stack applications often need to integrate with third-party services (e.g., payment gateways, social media platforms, mapping services). APIs provide a standardized way to connect with these external services, leveraging their functionalities without rebuilding them from scratch.\nScalability and Distributed Systems: In modern architectures like microservices, APIs are fundamental for enabling communication between individual services, allowing for better scalability and independent deployment of components.\nIn essence, APIs are the communication backbone of a full-stack application, enabling seamless interaction between its various components and with external systems, ultimately delivering a complete and functional user experience."
+      },
+      "2": {
+        "text": "The typical request-response cycle in a web application involves a series of steps between a client (usually a web browser) and a server. This cycle is fundamental to how web applications function. \nClient Initiates Request: The process begins when a user interacts with a web application, such as typing a URL in the browser, clicking a link, or submitting a form. This action triggers the client (browser) to construct and send an HTTP request to the web server. This request includes details like the request method (GET, POST, etc.), the Uniform Resource Identifier (URI) of the desired resource, and various headers and potentially a request body (e.g., form data).\nServer Receives and Processes Request: The web server, upon receiving the HTTP request, analyzes it to determine the requested resource and the intended action. The server then processes the request, which may involve:\nRetrieving data from a database.\nExecuting server-side scripts or application logic.\nAccessing files on the server's file system.\nPerforming calculations or other operations.\nServer Constructs and Sends Response: After processing the request, the server generates an HTTP response. This response comprises:\nA status code indicating the outcome of the request (e.g., 200 OK for success, 404 Not Found if the resource is unavailable, 500 Internal Server Error for server-side issues).\nResponse headers: containing metadata about the response (e.g., Content-Type specifying the type of content, Content-Length for the size of the body).\nAn optional response body containing the requested data or content (e.g., an HTML document, JSON data, an image, or other files).\nClient Receives and Renders Response: The client (browser) receives the HTTP response from the server. It then interprets the response:\nIf the response body contains HTML, the browser parses it and renders the web page for the user.\nIf the response contains other resources (like CSS, JavaScript, or images), the browser may fetch these additional resources in subsequent request-response cycles.\nIf the response is for an API call, the client-side JavaScript might process the received data (e.g., JSON) and dynamically update the user interface."
+      },
+      "3": {
+        "text": "Full-stack authentication and authorization involve confirming a user's identity (authentication) and then verifying their permissions for specific actions or resources (authorization) using methods like token-based authentication (JWT), social logins (OAuth2), and Role-Based Access Control (RBAC) for permissions. The process typically involves the client sending credentials, the backend verifying them and issuing a token, and the client then using that token for subsequent requests, with authorization rules enforced by the backend.  \nCommon Approaches\nToken-Based Authentication (JWT):\nHow it Works: After a user logs in, the backend creates a token (JSON Web Token) containing user information and permissions and sends it to the client. The client stores this token and includes it in every subsequent request. \nBenefits: This eliminates the need for the backend to store session data and provides a stateless authentication system, which can be beneficial for scalability. \nImplementation: Libraries like Passport.js or custom solutions using Node.js, Express, and JWT are common. \nOAuth 2.0 (Open Authorization):\nHow it Works: This framework allows users to grant third-party applications limited access to their resources without sharing their credentials directly. \nCommon Use Cases: Social logins (e.g., \"Login with Google\" or \"Login with GitHub\") are implemented using OAuth2. \nBenefit: It provides a secure way to integrate with external services and manage access to user data. \nRole-Based Access Control (RBAC):\nHow it Works: Users are assigned roles (e.g., admin, user), and each role is granted specific permissions to access certain parts of the application or data. \nBenefits: This simplifies permission management, especially in applications with different user types, by grouping users by their responsibilities. \nKey Steps in the Process\nAuthentication:\nCredential Submission: The user provides their login credentials (e.g., email and password) to the client application. \nBackend Verification: The backend receives the credentials, verifies them, and, if correct, generates a token (e.g., a JWT). \nToken Issuance: The token is returned to the client for storage. \nAuthorization:\nToken Inclusion in Requests: For all protected actions or resources, the client sends the token along with the request. \nBackend Authorization Check: The backend verifies the token's validity and checks the associated user's permissions (often based on their assigned role or claims within the token) before allowing access. \nSecurity Best Practices\nSecure Credential Storage: Store user passwords using strong hashing algorithms like bcrypt or Argon2 with salting. \nMulti-Factor Authentication (MFA): Implement MFA to add an extra layer of security by requiring additional verification (like a one-time password) beyond a password. \nInput Validation: Sanitize and validate all user inputs on both the client and server to prevent common vulnerabilities. \nRegular Auditing: Continuously monitor and update your security measures to stay ahead of new threats."
+      },
+      "4": {
+        "text": "When building a scalable microservices architecture, you can expect significant challenges related to distributed systems, such as data management, communication, and operational complexity. Properly anticipating and addressing these issues is critical for a successful implementation. \nKey challenges and solutions\n1. Data management and consistency\nIn a microservices architecture, each service often has its own database to ensure loose coupling. This autonomy creates challenges for managing transactions and maintaining data consistency across multiple services. \nAnticipated challenges:\nDistributed transactions: The traditional ACID (Atomicity, Consistency, Isolation, Durability) transactions used in monoliths are not well-suited for a distributed environment.\nData redundancy: Information needed by multiple services may be duplicated, creating opportunities for inconsistencies.\nDatabase bottlenecks: Overloaded databases can still become bottlenecks, regardless of whether the application is broken into services\nProposed solutions:\nSaga pattern: Manage distributed transactions as a sequence of local, asynchronous transactions. If one step fails, a compensating transaction is executed to reverse changes made by previous steps.\nOrchestration-based: A central orchestrator service coordinates the saga's steps.\nChoreography-based: Services communicate via events, with no central coordinator.\nEventual consistency: Accept that data will be inconsistent for a short period. This model favors high availability and can be managed effectively with patterns like Event Sourcing.\nCommand Query Responsibility Segregation (CQRS): Separate the read and write operations into distinct models. This allows each to be independently optimized for performance and scalability. \n2. Inter-service communication\nWith services running as independent processes, robust communication channels are essential. Poor communication can lead to performance issues and cascading failures. \nAnticipated challenges:\nLatency: Network calls between services add overhead and are slower than in-process communication within a monolith.\nFailure handling: If a dependent service is unavailable, it can cause failures to cascade throughout the system.\nTight coupling: Tightly coupled service-to-service communication can reduce availability and agility. \nProposed solutions:\nAsynchronous messaging: Use a message broker like Apache Kafka or RabbitMQ to decouple services. A service can publish a message without waiting for an immediate response, which improves resilience.\nAPI Gateway: Route client requests to the appropriate microservices, handle load balancing, and manage authentication. This centralizes access control and simplifies communication for clients.\nResilience patterns: Implement fault tolerance mechanisms to handle failures gracefully.\nCircuit Breaker: Prevents a service from continuously retrying an operation that is likely to fail.\nRetry Mechanism: Automatically retries failed requests that may be caused by a temporary, transient network issue.\nService Mesh: Use a dedicated infrastructure layer (e.g., Istio or Linkerd) to handle service-to-service communication. This provides built-in resilience, security, and observability features. \n3. Monitoring and observability\nIn a distributed system, issues are difficult to diagnose without a holistic view of the application's health. Traditional monitoring tools designed for monolithic applications are insufficient. \nAnticipated challenges:\nVisibility: Tracing a single user request across a complex network of services is difficult without proper tools.\nLogging: Logs are distributed across many services, making it challenging to aggregate and analyze them effectively.\nRoot cause analysis: Determining the root cause of an incident can be time-consuming due to the sheer number of interdependent components."
+      },
+      "5": {
+        "text": "Optimizing database performance in a fullstack application involves a multi-faceted approach, considering query types and data volumes.\n1. Query Optimization:\nIndexing: Create indexes on frequently queried columns, especially those used in WHERE clauses, JOIN conditions, and ORDER BY clauses. This significantly speeds up data retrieval.\nEfficient Queries:\nAvoid SELECT *; specify only necessary columns.\nOptimize JOIN operations by ensuring proper indexing on join keys and considering the order of joins for performance.\nUse EXPLAIN (or EXPLAIN ANALYZE) to understand query execution plans and identify bottlenecks.\nRewrite complex queries into simpler, more efficient forms where possible.\nBatching and Bulk Operations: For large data volumes, perform inserts, updates, or deletes in batches rather than individual operations to reduce database round trips and overhead.\n2. Caching Strategies:\nQuery Result Caching: Cache the results of frequently executed, read-heavy queries that return consistent data. This can be implemented at the application level (e.g., using Redis or Memcached) or sometimes at the database level.\nObject Caching: Cache frequently accessed application objects or data entities to avoid repeated database lookups.\nClient-Side Caching: Leverage browser caching for static assets and frequently accessed data to reduce server load and improve user experience.\n3. Database Design and Architecture:\nNormalization and Denormalization: Achieve a balance between normalization (reducing data redundancy) and denormalization (introducing controlled redundancy for faster reads) based on application requirements and query patterns.\nPartitioning and Sharding: For very large datasets, partition tables or shard the database across multiple servers to distribute data and query load, improving scalability and performance.\nConnection Pooling: Utilize connection pooling to manage database connections efficiently, reducing the overhead of establishing and closing connections for each request.\n4. Monitoring and Tuning:\nDatabase Monitoring: Continuously monitor database performance metrics (CPU usage, I/O, query execution times, lock contention) to identify performance bottlenecks.\nRegular Maintenance: Perform regular database maintenance tasks such as index rebuilding, statistics updates, and data defragmentation.\n5. Application-Level Optimizations:\nN+1 Query Problem: Address the N+1 query problem in ORMs by using eager loading or appropriate joining strategies to fetch related data in a single query.\nAsynchronous Operations: Use asynchronous operations for database interactions to prevent blocking the main application thread, improving responsiveness."
+      }
+    },
+    "aiResult": {
+      "perAnswer": [
+        {
+          "index": 1,
+          "score": 0,
+          "feedback": "No answer was provided for this question."
+        },
+        {
+          "index": 2,
+          "score": 9,
+          "feedback": "Excellent, comprehensive explanation covering the definition of an API and its key roles in full-stack development. The answer is well-structured and clear."
+        },
+        {
+          "index": 3,
+          "score": 9,
+          "feedback": "Very detailed and accurate explanation of the request-response cycle, covering all essential steps and components from client initiation to rendering the response."
+        },
+        {
+          "index": 4,
+          "score": 10,
+          "feedback": "An extremely comprehensive and well-structured answer, detailing common approaches (JWT, OAuth2, RBAC), key process steps, and essential security best practices for authentication and authorization."
+        },
+        {
+          "index": 5,
+          "score": 9,
+          "feedback": "Strong identification of key challenges in microservices architecture with excellent, detailed solutions. The comprehensive coverage of distributed system patterns is notable, though the last section on monitoring was incomplete."
+        },
+        {
+          "index": 6,
+          "score": 9,
+          "feedback": "A comprehensive and well-categorized overview of database performance optimization strategies, covering a wide range of practical techniques from query tuning to application-level considerations."
+        }
+      ],
+      "overall": {
+        "score": 77,
+        "summary": "The candidate demonstrates a very strong understanding of core full-stack development concepts, providing detailed and practical insights into APIs, request-response cycles, authentication/authorization, microservices challenges, and database optimization. The quality of the provided answers is high, although one question was left unanswered."
+      }
+    },
+    "completedAt": 1759298901849
+  },
+  {
+    "id": "s-1759298682988",
+    "createdAt": 1759298911912,
+    "candidate": {
+      "name": "GANDHAM GUNASHEKAR",
+      "email": "shekar.df7@gmail.com",
+      "phone": "+91 7075298758"
+    },
+    "questions": [
+      {
+        "id": "q-0",
+        "text": "Can you explain the fundamental differences between frontend and backend development in a web application?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-1",
+        "text": "What is an API, and what role does it play in fullstack development?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-2",
+        "text": "Describe the typical request-response cycle in a web application, from the browser to the server and back.",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-3",
+        "text": "How do you handle authentication and authorization in a fullstack application, and what are some common approaches?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-4",
+        "text": "Imagine you need to build a scalable microservices architecture. What are the key challenges you anticipate, and how would you address them?",
+        "difficulty": "hard",
+        "timeLimit": 120
+      },
+      {
+        "id": "q-5",
+        "text": "Discuss various strategies for optimizing database performance in a fullstack application, considering different types of queries and data volumes.",
+        "difficulty": "hard",
+        "timeLimit": 120
+      }
+    ],
+    "answers": {
+      "0": {
+        "text": ""
+      },
+      "1": {
+        "text": "An Application Programming Interface (API) is a set of defined rules and protocols that allow different software applications to communicate and interact with each other. It acts as an intermediary, enabling the exchange of data and functionalities between disparate systems. \nIn full-stack development, APIs play a crucial role in connecting the frontend (client-side) and backend (server-side) of an application.\nRole of APIs in Full-Stack Development:\nConnecting Frontend and Backend: APIs serve as the bridge between the user interface (developed with technologies like React, Angular, or Vue) and the server-side logic and database (developed with technologies like Node.js, Python/Django, or Java/Spring). The frontend sends requests to the backend via APIs to retrieve, create, update, or delete data, and the backend responds with the requested information.\nData Exchange and Functionality Exposure: APIs define how data is structured and exchanged between the client and server. They expose specific functionalities of the backend to the frontend, allowing the frontend to trigger actions or access resources without needing to understand the underlying server-side implementation details.\nModularity and Reusability: APIs promote modularity by allowing developers to build distinct, independent services that can be accessed and reused across different parts of an application or even in entirely different applications. This fosters efficient development and easier maintenance.\nIntegration with External Services: Full-stack applications often need to integrate with third-party services (e.g., payment gateways, social media platforms, mapping services). APIs provide a standardized way to connect with these external services, leveraging their functionalities without rebuilding them from scratch.\nScalability and Distributed Systems: In modern architectures like microservices, APIs are fundamental for enabling communication between individual services, allowing for better scalability and independent deployment of components.\nIn essence, APIs are the communication backbone of a full-stack application, enabling seamless interaction between its various components and with external systems, ultimately delivering a complete and functional user experience."
+      },
+      "2": {
+        "text": "The typical request-response cycle in a web application involves a series of steps between a client (usually a web browser) and a server. This cycle is fundamental to how web applications function. \nClient Initiates Request: The process begins when a user interacts with a web application, such as typing a URL in the browser, clicking a link, or submitting a form. This action triggers the client (browser) to construct and send an HTTP request to the web server. This request includes details like the request method (GET, POST, etc.), the Uniform Resource Identifier (URI) of the desired resource, and various headers and potentially a request body (e.g., form data).\nServer Receives and Processes Request: The web server, upon receiving the HTTP request, analyzes it to determine the requested resource and the intended action. The server then processes the request, which may involve:\nRetrieving data from a database.\nExecuting server-side scripts or application logic.\nAccessing files on the server's file system.\nPerforming calculations or other operations.\nServer Constructs and Sends Response: After processing the request, the server generates an HTTP response. This response comprises:\nA status code indicating the outcome of the request (e.g., 200 OK for success, 404 Not Found if the resource is unavailable, 500 Internal Server Error for server-side issues).\nResponse headers: containing metadata about the response (e.g., Content-Type specifying the type of content, Content-Length for the size of the body).\nAn optional response body containing the requested data or content (e.g., an HTML document, JSON data, an image, or other files).\nClient Receives and Renders Response: The client (browser) receives the HTTP response from the server. It then interprets the response:\nIf the response body contains HTML, the browser parses it and renders the web page for the user.\nIf the response contains other resources (like CSS, JavaScript, or images), the browser may fetch these additional resources in subsequent request-response cycles.\nIf the response is for an API call, the client-side JavaScript might process the received data (e.g., JSON) and dynamically update the user interface."
+      },
+      "3": {
+        "text": "Full-stack authentication and authorization involve confirming a user's identity (authentication) and then verifying their permissions for specific actions or resources (authorization) using methods like token-based authentication (JWT), social logins (OAuth2), and Role-Based Access Control (RBAC) for permissions. The process typically involves the client sending credentials, the backend verifying them and issuing a token, and the client then using that token for subsequent requests, with authorization rules enforced by the backend.  \nCommon Approaches\nToken-Based Authentication (JWT):\nHow it Works: After a user logs in, the backend creates a token (JSON Web Token) containing user information and permissions and sends it to the client. The client stores this token and includes it in every subsequent request. \nBenefits: This eliminates the need for the backend to store session data and provides a stateless authentication system, which can be beneficial for scalability. \nImplementation: Libraries like Passport.js or custom solutions using Node.js, Express, and JWT are common. \nOAuth 2.0 (Open Authorization):\nHow it Works: This framework allows users to grant third-party applications limited access to their resources without sharing their credentials directly. \nCommon Use Cases: Social logins (e.g., \"Login with Google\" or \"Login with GitHub\") are implemented using OAuth2. \nBenefit: It provides a secure way to integrate with external services and manage access to user data. \nRole-Based Access Control (RBAC):\nHow it Works: Users are assigned roles (e.g., admin, user), and each role is granted specific permissions to access certain parts of the application or data. \nBenefits: This simplifies permission management, especially in applications with different user types, by grouping users by their responsibilities. \nKey Steps in the Process\nAuthentication:\nCredential Submission: The user provides their login credentials (e.g., email and password) to the client application. \nBackend Verification: The backend receives the credentials, verifies them, and, if correct, generates a token (e.g., a JWT). \nToken Issuance: The token is returned to the client for storage. \nAuthorization:\nToken Inclusion in Requests: For all protected actions or resources, the client sends the token along with the request. \nBackend Authorization Check: The backend verifies the token's validity and checks the associated user's permissions (often based on their assigned role or claims within the token) before allowing access. \nSecurity Best Practices\nSecure Credential Storage: Store user passwords using strong hashing algorithms like bcrypt or Argon2 with salting. \nMulti-Factor Authentication (MFA): Implement MFA to add an extra layer of security by requiring additional verification (like a one-time password) beyond a password. \nInput Validation: Sanitize and validate all user inputs on both the client and server to prevent common vulnerabilities. \nRegular Auditing: Continuously monitor and update your security measures to stay ahead of new threats."
+      },
+      "4": {
+        "text": "When building a scalable microservices architecture, you can expect significant challenges related to distributed systems, such as data management, communication, and operational complexity. Properly anticipating and addressing these issues is critical for a successful implementation. \nKey challenges and solutions\n1. Data management and consistency\nIn a microservices architecture, each service often has its own database to ensure loose coupling. This autonomy creates challenges for managing transactions and maintaining data consistency across multiple services. \nAnticipated challenges:\nDistributed transactions: The traditional ACID (Atomicity, Consistency, Isolation, Durability) transactions used in monoliths are not well-suited for a distributed environment.\nData redundancy: Information needed by multiple services may be duplicated, creating opportunities for inconsistencies.\nDatabase bottlenecks: Overloaded databases can still become bottlenecks, regardless of whether the application is broken into services\nProposed solutions:\nSaga pattern: Manage distributed transactions as a sequence of local, asynchronous transactions. If one step fails, a compensating transaction is executed to reverse changes made by previous steps.\nOrchestration-based: A central orchestrator service coordinates the saga's steps.\nChoreography-based: Services communicate via events, with no central coordinator.\nEventual consistency: Accept that data will be inconsistent for a short period. This model favors high availability and can be managed effectively with patterns like Event Sourcing.\nCommand Query Responsibility Segregation (CQRS): Separate the read and write operations into distinct models. This allows each to be independently optimized for performance and scalability. \n2. Inter-service communication\nWith services running as independent processes, robust communication channels are essential. Poor communication can lead to performance issues and cascading failures. \nAnticipated challenges:\nLatency: Network calls between services add overhead and are slower than in-process communication within a monolith.\nFailure handling: If a dependent service is unavailable, it can cause failures to cascade throughout the system.\nTight coupling: Tightly coupled service-to-service communication can reduce availability and agility. \nProposed solutions:\nAsynchronous messaging: Use a message broker like Apache Kafka or RabbitMQ to decouple services. A service can publish a message without waiting for an immediate response, which improves resilience.\nAPI Gateway: Route client requests to the appropriate microservices, handle load balancing, and manage authentication. This centralizes access control and simplifies communication for clients.\nResilience patterns: Implement fault tolerance mechanisms to handle failures gracefully.\nCircuit Breaker: Prevents a service from continuously retrying an operation that is likely to fail.\nRetry Mechanism: Automatically retries failed requests that may be caused by a temporary, transient network issue.\nService Mesh: Use a dedicated infrastructure layer (e.g., Istio or Linkerd) to handle service-to-service communication. This provides built-in resilience, security, and observability features. \n3. Monitoring and observability\nIn a distributed system, issues are difficult to diagnose without a holistic view of the application's health. Traditional monitoring tools designed for monolithic applications are insufficient. \nAnticipated challenges:\nVisibility: Tracing a single user request across a complex network of services is difficult without proper tools.\nLogging: Logs are distributed across many services, making it challenging to aggregate and analyze them effectively.\nRoot cause analysis: Determining the root cause of an incident can be time-consuming due to the sheer number of interdependent components."
+      },
+      "5": {
+        "text": "Optimizing database performance in a fullstack application involves a multi-faceted approach, considering query types and data volumes.\n1. Query Optimization:\nIndexing: Create indexes on frequently queried columns, especially those used in WHERE clauses, JOIN conditions, and ORDER BY clauses. This significantly speeds up data retrieval.\nEfficient Queries:\nAvoid SELECT *; specify only necessary columns.\nOptimize JOIN operations by ensuring proper indexing on join keys and considering the order of joins for performance.\nUse EXPLAIN (or EXPLAIN ANALYZE) to understand query execution plans and identify bottlenecks.\nRewrite complex queries into simpler, more efficient forms where possible.\nBatching and Bulk Operations: For large data volumes, perform inserts, updates, or deletes in batches rather than individual operations to reduce database round trips and overhead.\n2. Caching Strategies:\nQuery Result Caching: Cache the results of frequently executed, read-heavy queries that return consistent data. This can be implemented at the application level (e.g., using Redis or Memcached) or sometimes at the database level.\nObject Caching: Cache frequently accessed application objects or data entities to avoid repeated database lookups.\nClient-Side Caching: Leverage browser caching for static assets and frequently accessed data to reduce server load and improve user experience.\n3. Database Design and Architecture:\nNormalization and Denormalization: Achieve a balance between normalization (reducing data redundancy) and denormalization (introducing controlled redundancy for faster reads) based on application requirements and query patterns.\nPartitioning and Sharding: For very large datasets, partition tables or shard the database across multiple servers to distribute data and query load, improving scalability and performance.\nConnection Pooling: Utilize connection pooling to manage database connections efficiently, reducing the overhead of establishing and closing connections for each request.\n4. Monitoring and Tuning:\nDatabase Monitoring: Continuously monitor database performance metrics (CPU usage, I/O, query execution times, lock contention) to identify performance bottlenecks.\nRegular Maintenance: Perform regular database maintenance tasks such as index rebuilding, statistics updates, and data defragmentation.\n5. Application-Level Optimizations:\nN+1 Query Problem: Address the N+1 query problem in ORMs by using eager loading or appropriate joining strategies to fetch related data in a single query.\nAsynchronous Operations: Use asynchronous operations for database interactions to prevent blocking the main application thread, improving responsiveness."
+      }
+    },
+    "aiResult": {
+      "perAnswer": [
+        {
+          "index": 1,
+          "score": 0,
+          "feedback": "No answer was provided for this question."
+        },
+        {
+          "index": 2,
+          "score": 9,
+          "feedback": "Excellent and comprehensive explanation of APIs and their vital role in full-stack development, covering various aspects clearly."
+        },
+        {
+          "index": 3,
+          "score": 9,
+          "feedback": "A clear, detailed, and accurate description of the HTTP request-response cycle, outlining all key stages effectively."
+        },
+        {
+          "index": 4,
+          "score": 10,
+          "feedback": "Very detailed and well-structured answer covering common approaches, key steps, and essential security best practices for authentication and authorization."
+        },
+        {
+          "index": 5,
+          "score": 10,
+          "feedback": "Outstanding answer. Clearly identifies major microservices challenges and provides practical, well-explained solutions with specific patterns and technologies."
+        },
+        {
+          "index": 6,
+          "score": 9,
+          "feedback": "Comprehensive discussion of database optimization strategies, covering query tuning, caching, design, and monitoring effectively."
+        }
+      ],
+      "overall": {
+        "score": 78,
+        "summary": "The candidate demonstrated a strong understanding of core full-stack concepts, including APIs, authentication, microservices, and database optimization. The explanations were detailed and insightful, particularly for complex topics. The only area for improvement was the lack of an answer for the first question."
+      }
+    },
+    "completedAt": 1759298911907
+  },
+  {
+    "id": "s-1759299735062",
+    "createdAt": 1759299916479,
+    "candidate": {
+      "name": "GANDHAM GUNASHEKAR",
+      "email": "shekar.df7@gmail.com",
+      "phone": "+91 7075298758"
+    },
+    "questions": [
+      {
+        "id": "q-0",
+        "text": "What are the main components of a typical fullstack web application?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-1",
+        "text": "Can you explain the fundamental difference between frontend and backend development?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-2",
+        "text": "How do the frontend and backend components typically communicate with each other in a web application?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-3",
+        "text": "What are some common types of databases used in fullstack development, and when might you choose a relational over a NoSQL database?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-4",
+        "text": "Describe some strategies for optimizing the performance and scalability of a fullstack application.",
+        "difficulty": "hard",
+        "timeLimit": 180
+      },
+      {
+        "id": "q-5",
+        "text": "What are some critical security considerations you would address when designing and building a fullstack application?",
+        "difficulty": "hard",
+        "timeLimit": 180
+      }
+    ],
+    "answers": {
+      "0": {
+        "text": "A typical fullstack web application consists of three main components: the Frontend (client-side, user interface), the Backend (server-side, logic, and data processing), and the Database (data storage). The frontend uses HTML, CSS, and JavaScript to create the user interface, the backend uses programming languages and frameworks like Node.js or Python for server logic and APIs to communicate with the frontend, and the database stores and retrieves application data.  \n1. Frontend (Client-Side)\nPurpose: The user interface (UI) that users interact with directly in their web browsers. \nTechnologies:\nHTML: Structures the content of web pages. \nCSS: Styles the visual presentation of the content. \nJavaScript: Adds interactivity, dynamic content, and complex features to web pages. \nFrontend Frameworks (e.g., React, Angular, Vue.js): Provide tools and structure to build dynamic and complex user interfaces more efficiently. \n2. Backend (Server-Side)\nPurpose: Manages the application's core logic, processes data, and communicates with the database. \nComponents & Technologies:\nProgramming Languages: Python, Java, Node.js, Ruby, PHP. \nServer-side Frameworks: Django (Python), Spring Boot (Java), Express (Node.js). \nAPIs (Application Programming Interfaces): Tools that enable communication between the frontend and the backend, often using RESTful or GraphQL over HTTP. \nApplication Logic: The \"behind-the-scenes\" processing, business rules, and data handling. \n3. Database\nPurpose: Stores and retrieves all the data the application needs to function. \nTypes & Technologies:\nSQL Databases (Relational): Structured data, managed with languages like SQL. Examples include MySQL and PostgreSQL. \nNoSQL Databases: Flexible data models. Examples include MongoDB. \nORMs/ODMs: Object-Relational Mappers and Object-Document Mappers simplify database interactions for developers."
+      },
+      "1": {
+        "text": "Frontend development focuses on the user-facing elements of a website or application—everything a user sees and interacts with, like layouts, buttons, and text. Backend development, conversely, handles the behind-the-scenes mechanics, including servers, databases, and application logic, which processes and stores data to power the frontend. Think of the frontend as the restaurant's dining room and the backend as the kitchen that prepares the food.  \nFrontend Development (Client-Side)\nWhat it is: The part of a web application that users see and interact with directly in their browser. \nResponsibilities: Designing the user interface, ensuring a good user experience, and creating visual elements. \nKey Technologies: HTML (for structure), CSS (for styling), and JavaScript (for interactivity). \nExamples: Creating buttons, navigation menus, text fields, and handling how pages display on different devices. \nBackend Development (Server-Side)\nWhat it is: The \"engine\" or infrastructure that makes an application work, handling data, servers, and logic. \nResponsibilities: Managing databases, processing data, handling user authentication, and ensuring the application functions smoothly. \nKey Technologies:\nLanguages: Python, Java, Ruby, PHP, .NET. \nDatabases: MySQL, PostgreSQL, SQL Server. \nFrameworks: Django (for Python), Ruby on Rails (for Ruby). \nExamples: Storing user information, processing online purchases, retrieving data for a user request, and managing servers. \nHow They Work Together\nWhen a user interacts with the frontend (e.g., fills out a form), the frontend sends a request to the backend. \nThe backend processes the request, retrieves or saves data from the database, and sends the necessary information back to the frontend. \nThe frontend then uses this information to display the result to the user."
+      },
+      "2": {
+        "text": "Frontend and backend components in a web application primarily communicate through HTTP requests and responses. This client-server model facilitates the exchange of information and functionality between the user-facing interface and the server-side logic.\nHere's a breakdown of the typical communication flow:\nFrontend Initiates Request: The user interacts with the frontend (e.g., clicking a button, submitting a form). This interaction triggers JavaScript code in the browser to send an HTTP request to the backend.\nRequest Types: Common HTTP methods include GET (to retrieve data), POST (to send data), PUT (to update data), and DELETE (to remove data).\nData Format: Data sent with the request is often formatted as JSON (JavaScript Object Notation), but can also be form data or other formats.\nBackend Processes Request: The backend server receives the HTTP request. It then processes the request based on the requested endpoint and the data provided. This may involve:\nDatabase Interaction: Querying, inserting, updating, or deleting data in a database.\nBusiness Logic: Performing calculations, validations, or other operations.\nExternal Service Integration: Communicating with other APIs or services.\nBackend Sends Response: After processing, the backend generates an HTTP response and sends it back to the frontend.\nResponse Status: The response includes an HTTP status code (e.g., 200 OK, 404 Not Found, 500 Internal Server Error) indicating the success or failure of the request.\nResponse Data: If the request was successful and involved data retrieval, the response body typically contains the requested data, again often in JSON format.\nFrontend Renders Response: The frontend receives the response, parses the data (if any), and updates the user interface accordingly. This could involve displaying new information, updating existing elements, or showing error messages.\nKey Technologies and Concepts:\nAPIs (Application Programming Interfaces): The backend exposes a set of defined endpoints and rules (the API) that the frontend can use to interact with its functionalities.\nRESTful APIs: A common architectural style for APIs that uses standard HTTP methods and resource-based URLs.\nAJAX (Asynchronous JavaScript and XML): Allows the frontend to make asynchronous HTTP requests without requiring a full page reload, leading to more dynamic user experiences.\nCORS (Cross-Origin Resource Sharing): A security mechanism that allows or restricts web pages from making requests to a different domain than the one that served the web page."
+      },
+      "3": {
+        "text": "Common databases include relational (like MySQL and PostgreSQL) and NoSQL types such as document-based (MongoDB) and key-value stores (Redis). Choose a relational database for structured, transactional data with ACID compliance (e.g., banking) or when complex queries and data integrity are paramount. Opt for a NoSQL database when dealing with large, unstructured or rapidly changing data, high scalability needs, or when eventual consistency is acceptable. \nCommon Types of Databases\nRelational Databases: Store data in tables with fixed schemas, supporting complex queries and relationships using SQL. \nExamples: MySQL, PostgreSQL, SQLite, Oracle. \nNoSQL Databases: Non-relational databases with flexible schemas, offering scalability and performance for diverse data types. \nExamples:\nDocument Databases: Store data in JSON-like documents, good for unstructured data (e.g., MongoDB). \nKey-Value Stores: Simple databases that store data as a collection of key-value pairs, ideal for high-speed access (e.g., Redis). \nWide-Column Stores: Designed for massive datasets and high-volume read/write operations (e.g., Cassandra). \nGraph Databases: Used for data with complex relationships, such as social networks (e.g., Neo4j)."
+      },
+      "4": {
+        "text": "Use asynchronous functions for I/O operations like database queries, file access, and network requests. Load Balancing: If you're handling a high volume of traffic, distribute traffic across multiple servers using a load balancer (e.g., Nginx, HAProxy) to improve scalability and ensure fault tolerance."
+      },
+      "5": {
+        "text": "Here are essential security best practices for full-stack developers:\nSanitize and Validate User Input. ...\nImplement Proper Authentication and Authorization. ...\nCross-Site Scripting (XSS) Prevention. ...\nCross-Site Request Forgery (CSRF) Protection. ...\nEncrypt Sensitive Data. ...\nImplement Proper Error Handling. ...\nSecure Your APIs."
+      }
+    },
+    "aiResult": {
+      "perAnswer": [
+        {
+          "index": 1,
+          "score": 9,
+          "feedback": "Excellent, comprehensive answer detailing the three core components (Frontend, Backend, Database) with relevant technologies and purposes for each."
+        },
+        {
+          "index": 2,
+          "score": 9,
+          "feedback": "Very clear explanation of the fundamental differences between frontend and backend, covering responsibilities, key technologies, and how they interact, supported by a good analogy."
+        },
+        {
+          "index": 3,
+          "score": 10,
+          "feedback": "Outstanding explanation of the communication flow, covering HTTP requests/responses, data formats (JSON), status codes, and essential concepts like APIs, REST, AJAX, and CORS in detail."
+        },
+        {
+          "index": 4,
+          "score": 9,
+          "feedback": "Good overview of common database types and clear, practical advice on choosing between relational and NoSQL based on data structure, transaction needs, and scalability."
+        },
+        {
+          "index": 5,
+          "score": 6,
+          "feedback": "Correctly identifies asynchronous operations and load balancing as key strategies. However, the answer could be more comprehensive by including other common optimization techniques like caching, database indexing, or CDN usage."
+        },
+        {
+          "index": 6,
+          "score": 9,
+          "feedback": "Excellent list of critical security considerations, covering input validation, authentication, authorization, common attack prevention (XSS, CSRF), data encryption, error handling, and API security."
+        }
+      ],
+      "overall": {
+        "score": 87,
+        "summary": "The candidate demonstrates a very strong understanding of core fullstack concepts, including architecture, component communication, database selection, and critical security considerations. While the answer on performance optimization could have been more extensive, their knowledge across other key areas is detailed and accurate."
+      }
+    },
+    "completedAt": 1759299916475
+  },
+  {
+    "id": "s-1759300916513",
+    "createdAt": 1759301141251,
+    "candidate": {
+      "name": "GANDHAM GUNASHEKAR",
+      "email": "shekar.df7@gmail.com",
+      "phone": "+91 7075298758"
+    },
+    "questions": [
+      {
+        "id": "q-0",
+        "text": "What are the fundamental technologies used for building the frontend of a web application?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-1",
+        "text": "Explain the role of an API in a typical fullstack application.",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-2",
+        "text": "Describe the principles of RESTful APIs and how they facilitate communication between frontend and backend.",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-3",
+        "text": "Compare and contrast SQL and NoSQL databases, providing scenarios where each would be preferred.",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-4",
+        "text": "How would you approach designing a scalable and fault-tolerant fullstack application, considering both frontend and backend aspects?",
+        "difficulty": "hard",
+        "timeLimit": 300
+      },
+      {
+        "id": "q-5",
+        "text": "Discuss common web security vulnerabilities and the measures you would implement across the full stack to address them.",
+        "difficulty": "hard",
+        "timeLimit": 300
+      }
+    ],
+    "answers": {
+      "0": {
+        "text": "The fundamental technologies for building the frontend of a web application are HTML, CSS, and JavaScript. HTML provides the structure and content, CSS handles the styling and visual design, and JavaScript adds interactivity and dynamic behavior to web pages. Modern development also relies heavily on frontend frameworks and libraries like React, Angular, and Vue, which simplify the development of complex user interfaces and Single Page Applications (SPAs).  \nCore Technologies\nHTML (HyperText Markup Language): This is the foundational language for web pages. It structures the content by defining elements and giving them meaning and structure, forming the base of any website. \nCSS (Cascading Style Sheets): CSS is responsible for the visual presentation and styling of HTML elements. It controls the colors, fonts, and overall aesthetic appeal of a web page. \nJavaScript (JS): This programming language adds interactivity and dynamic behavior to web pages. It enriches user experiences, makes sites more engaging, and is crucial for modern web application functionality. \nFrameworks and Libraries\nFrontend Frameworks: These are collections of HTML, CSS, and JS code that make the development process easier and improve developer productivity. Examples include: \nReact: A JavaScript library for building user interfaces with reusable components, ideal for large-scale applications. \nAngular: A comprehensive, opinionated framework from Google that provides a complete solution for web development. \nVue: Another popular JavaScript framework that is known for its versatility and ease of integration. \nUI Toolkits: Tools like Bootstrap offer pre-built components, grids, and utility classes to help developers create responsive and visually appealing designs quickly and efficiently. \nOther Important Concepts\nResponsive Web Design: The practice of designing web applications that adapt their layout to different screen sizes and devices, ensuring a consistent user experience across desktops, tablets, and mobile phones. \nSingle Page Applications (SPAs): These are dynamic web applications that load a single HTML page and update content dynamically as the user interacts with the app, rather than requiring a full page reload."
+      },
+      "1": {
+        "text": "In a typical full-stack application, an Application Programming Interface (API) serves as the crucial intermediary that enables communication and data exchange between the frontend (client-side) and the backend (server-side).\nKey roles of an API in a full-stack application:\nEnabling Frontend-Backend Communication: The frontend, which handles the user interface and user interactions, sends requests to the backend via the API. These requests can include retrieving data, submitting information, or triggering specific actions. The API defines the rules and formats for these interactions, ensuring the frontend knows how to ask for information and the backend knows how to respond.\nData Retrieval and Manipulation: The API acts as the gateway to the application's data. When the frontend needs to display information (e.g., a list of products, user profiles), it makes an API call to the backend, which then retrieves the requested data from the database and sends it back to the frontend through the API. Similarly, when a user creates, updates, or deletes data, the frontend sends these requests to the backend via API endpoints, which then perform the necessary operations on the database.\nEncapsulating Business Logic: The API allows the backend to expose specific functionalities and business logic to the frontend without revealing the underlying implementation details. This separation of concerns simplifies development, as frontend developers only need to understand how to interact with the API, not the complexities of the backend code or database structure.\nFacilitating Integration with External Services: APIs are not limited to internal communication. They also enable the full-stack application to integrate with external services and third-party platforms. For example, an e-commerce application might use a payment gateway API to process transactions, a mapping API to display locations, or a social media API for sharing functionalities.\nSecurity and Access Control: APIs often incorporate security measures such as authentication and authorization. This ensures that only authorized users or applications can access specific resources and perform certain actions, protecting sensitive data and functionalities.\nIn essence, the API acts as the contract between the frontend and backend, defining how they interact and facilitating the smooth flow of data and functionality throughout the entire full-stack application."
+      },
+      "2": {
+        "text": "RESTful APIs, or Representational State Transfer APIs, adhere to a set of architectural principles that govern how web services communicate. These principles facilitate a clear and efficient separation of concerns between frontend and backend systems.\nPrinciples of RESTful APIs:\nClient-Server Architecture: The client (frontend) and server (backend) are distinct and operate independently. The client handles the user interface and experience, while the server manages data storage, processing, and business logic. This separation allows for independent development and evolution of each component. \nStatelessness: Each request from the client to the server must contain all the information necessary to understand and process it. The server does not store any client-specific session state between requests, making the API more scalable and resilient. \nCacheability: Responses from the server can be defined as cacheable or non-cacheable. If cacheable, the client can store and reuse the response data for future equivalent requests, reducing server load and improving performance.\nUniform Interface: This is a core principle promoting simplicity and visibility within the system. It encompasses:\nResource Identification in Requests: Resources are identified using Uniform Resource Identifiers (URIs).\nResource Manipulation Through Representations: Clients interact with resources by exchanging representations (e.g., JSON, XML) of their state.\nSelf-Descriptive Messages: Each message contains enough information to describe how to process it. \nHypermedia as the Engine of Application State (HATEOAS): Resources can include links to related resources, allowing clients to discover available actions dynamically.\nLayered System: A client cannot ordinarily tell whether it is connected directly to the server or to an intermediary (like a proxy or load balancer). This allows for flexible system architecture and improved scalability through layers like load balancing and shared caches. \nFacilitating Communication between Frontend and Backend:\nRESTful principles enable seamless communication by:\nStandardizing Interactions: The uniform interface ensures that both frontend and backend understand how to interact, using standard HTTP methods (GET, POST, PUT, DELETE) and consistent data formats (e.g., JSON).\nDecoupling Components: The client-server separation allows frontend and backend teams to develop and deploy independently, reducing dependencies and accelerating development cycles.\nImproving Scalability: Statelessness and cacheability contribute to a more scalable backend, as servers do not need to maintain session information and can offload requests to caches.\nEnhancing Maintainability: The clear structure and standardized communication make it easier to understand, debug, and maintain the system over time."
+      },
+      "3": {
+        "text": "SQL and NoSQL databases represent two fundamental approaches to data storage and management, each with distinct characteristics and optimal use cases.\nSQL Databases (Relational Databases):\nStructure: Data is organized into tables with predefined schemas, using rows and columns. Relationships between tables are established through foreign keys.\nQuery Language: Primarily use Structured Query Language (SQL) for data definition, manipulation, and querying.\nACID Compliance: Emphasize Atomicity, Consistency, Isolation, and Durability (ACID) properties, ensuring data integrity and reliable transactions.\nScalability: Traditionally scale vertically by upgrading hardware on a single server, though some modern SQL databases offer horizontal scaling options.\nExamples: MySQL, PostgreSQL, Oracle, SQL Server.\nNoSQL Databases (Non-Relational Databases):\nStructure: Offer flexible data models, including document (e.g., MongoDB), key-value (e.g., Redis), column-family (e.g., Cassandra), and graph (e.g., Neo4j). Schemas are often dynamic or non-existent.\nQuery Language: Use various query languages specific to their data model, or API calls for data interaction.\nBASE Properties: Prioritize Basic Availability, Soft state, and Eventual consistency (BASE) for high availability and performance in distributed environments.\nScalability: Designed for horizontal scaling, distributing data across multiple servers for increased capacity and performance.\nExamples: MongoDB, Cassandra, Redis, Neo4j, Couchbase.\nComparison and Contrast:\nSchema: SQL databases require a rigid, predefined schema, while NoSQL databases offer schema flexibility.\nConsistency vs. Availability: SQL prioritizes strong consistency (ACID), ensuring data integrity, while NoSQL often prioritizes availability and partition tolerance (BASE), allowing for eventual consistency.\nScalability: SQL primarily scales vertically, while NoSQL excels in horizontal scaling.\nData Models: SQL uses a tabular, relational model, while NoSQL offers diverse models like document, key-value, and graph.\nPreferred Scenarios:\nSQL Databases are preferred for:\nApplications requiring strong data consistency and transactional integrity: Financial systems, e-commerce platforms (for order processing), and inventory management.\nStructured data with well-defined relationships: Enterprise Resource Planning (ERP) systems, Customer Relationship Management (CRM) applications. \nComplex queries and reporting: Business intelligence and data warehousing where analytical queries are crucial.\nNoSQL Databases are preferred for:\nHandling large volumes of unstructured or semi-structured data: Content management systems, social media feeds, IoT data.\nApplications requiring high scalability and availability: Real-time analytics, online gaming, and large-scale web applications.\nRapid development and evolving data models: Startups and projects with frequently changing requirements, where schema flexibility is advantageous.\nSpecific use cases that align with a particular NoSQL data model: Graph databases for social networks, key-value stores for caching."
+      },
+      "4": {
+        "text": "Designing a scalable and fault-tolerant fullstack application requires a holistic approach, addressing both frontend and backend considerations.\nBackend Design for Scalability and Fault Tolerance:\nMicroservices Architecture: Decompose the application into smaller, independent services. This allows individual services to be scaled independently and provides isolation, preventing a failure in one service from affecting the entire application.\nStateless Services: Design services to be stateless, meaning they do not store session information locally. This enables horizontal scaling by adding more instances of a service behind a load balancer.\nLoad Balancing: Distribute incoming requests across multiple instances of your services to prevent single points of failure and ensure even resource utilization.\nDatabase Optimization and Scalability:\nChoose the right database: Select a database (SQL or NoSQL) that aligns with your data model and scalability requirements.\nSharding/Partitioning: Divide large datasets across multiple database instances to improve performance and scalability.\nReplication and Failover: Implement database replication for data redundancy and automatic failover mechanisms to ensure continuous availability in case of a primary database failure.\nCaching: Utilize caching layers (e.g., Redis, Memcached) to store frequently accessed data, reducing database load and improving response times.\nAsynchronous Processing and Message Queues: Use message queues (e.g., Kafka, RabbitMQ) for tasks that can be processed asynchronously, decoupling services and improving responsiveness.\nMonitoring and Alerting: Implement robust monitoring and alerting systems to detect and respond to issues proactively, ensuring high availability.\nContainerization and Orchestration: Use containerization (e.g., Docker) to package applications and their dependencies, and orchestration platforms (e.g., Kubernetes) to automate deployment, scaling, and management of containers.\nFrontend Design for Scalability and Fault Tolerance:\nComponent-Based Architecture: Build the frontend using reusable components, promoting modularity, maintainability, and easier scaling of development efforts.\nPerformance Optimization:\nCode Splitting and Lazy Loading: Reduce initial load times by loading only necessary code and components as needed.\nImage and Asset Optimization: Compress images and optimize other assets to minimize file sizes and improve loading speed.\nCaching: Leverage browser caching and Content Delivery Networks (CDNs) to deliver static assets efficiently.\nError Handling and Resilience: Implement robust error handling mechanisms, including graceful degradation, retry logic for API calls, and displaying informative error messages to users.\nResponsive Design: Ensure the application adapts to various screen sizes and devices, providing a consistent user experience across platforms.\nAPI Design: Design efficient and well-documented APIs (REST or GraphQL) to facilitate seamless communication between the frontend and backend, using versioning to manage changes over time.\nProgressive Web Apps (PWAs): Consider PWA features like offline capabilities and push notifications to enhance user experience and resilience."
+      },
+      "5": {
+        "text": "Common web security vulnerabilities include:\nInjection Flaws (e.g., SQL Injection, Command Injection): Attackers inject malicious code or commands into input fields, manipulating the application's logic or database queries.\nCross-Site Scripting (XSS): Malicious scripts are injected into web pages viewed by other users, leading to session hijacking, data theft, or defacement.\nBroken Authentication and Session Management: Weaknesses in authentication mechanisms or session handling allow attackers to impersonate users or gain unauthorized access.\nBroken Access Control: Inadequate enforcement of access policies allows users to access unauthorized resources or perform privileged actions.\nSecurity Misconfiguration: Default configurations, unpatched software, or improper settings leave systems vulnerable.\nSensitive Data Exposure: Inadequate protection of sensitive data (e.g., passwords, financial information) during storage or transmission.\nCross-Site Request Forgery (CSRF): Attackers trick authenticated users into performing unintended actions on a web application.\nUsing Components with Known Vulnerabilities: Incorporating outdated or vulnerable libraries and frameworks.\nMeasures for Addressing Vulnerabilities Across the Full Stack:\nFrontend:\nInput Validation and Sanitization: Implement client-side validation and sanitization of user input to prevent XSS and other injection attacks.\nContent Security Policy (CSP): Use CSP headers to restrict the sources from which content can be loaded, mitigating XSS risks.\nHTTPS Enforcement: Ensure all communication uses HTTPS to encrypt data in transit.\nSecure Cookie Flags: Use HttpOnly and Secure flags for cookies to prevent XSS attacks from accessing session tokens and ensure cookies are only sent over HTTPS.\nBackend:\nParameterized Queries (Prepared Statements): Use parameterized queries for all database interactions to prevent SQL injection.\nStrong Authentication and Authorization: Implement robust authentication mechanisms (e.g., multi-factor authentication) and enforce strict role-based access control.\nSecure Session Management: Generate strong, random session IDs, invalidate sessions after logout or inactivity, and use secure cookie flags.\nInput Validation and Sanitization (Server-Side): Perform comprehensive server-side validation and sanitization of all user input, even if client-side validation is present.\nError Handling and Logging: Implement secure error handling that avoids revealing sensitive system information and robust logging for security monitoring.\nSecure API Design: Design APIs with security in mind, including strong authentication, authorization, rate limiting, and input validation.\nCSRF Protection: Implement CSRF tokens or other mechanisms to prevent CSRF attacks.\nInfrastructure/Deployment:\nRegular Patching and Updates: Keep all operating systems, web servers, databases, and third-party libraries updated to address known vulnerabilities.\nNetwork Segmentation and Firewalls: Implement network segmentation and configure firewalls to restrict access to sensitive resources.\nSecurity Configuration Hardening: Follow security best practices for configuring servers, databases, and other infrastructure components.\nVulnerability Scanning and Penetration Testing: Regularly perform security scans and penetration tests to identify and address vulnerabilities proactively.\nSecure Secrets Management: Use dedicated tools and practices for securely storing and managing API keys, database credentials, and other sensitive secrets."
+      }
+    },
+    "aiResult": {
+      "perAnswer": [
+        {
+          "index": 0,
+          "score": 10,
+          "feedback": "Excellent and comprehensive answer covering core technologies, modern frameworks, and important architectural concepts like responsive design and SPAs."
+        },
+        {
+          "index": 1,
+          "score": 10,
+          "feedback": "Very thorough explanation of an API's role, covering internal communication, external integration, business logic encapsulation, and security aspects."
+        },
+        {
+          "index": 2,
+          "score": 10,
+          "feedback": "Excellent and detailed explanation of all core RESTful principles, including HATEOAS, and how they contribute to effective frontend-backend communication."
+        },
+        {
+          "index": 3,
+          "score": 10,
+          "feedback": "Comprehensive comparison and contrast, clearly outlining characteristics, scalability models, consistency properties, and appropriate use cases for both SQL and NoSQL databases."
+        },
+        {
+          "index": 4,
+          "score": 9,
+          "feedback": "Very strong and comprehensive answer covering a wide array of strategies for both backend (microservices, database scaling, async processing, containerization) and frontend (performance, error handling, PWAs) to achieve scalability and fault tolerance."
+        },
+        {
+          "index": 5,
+          "score": 10,
+          "feedback": "Excellent, detailed response covering a broad range of common vulnerabilities and providing a comprehensive set of mitigation strategies across frontend, backend, and infrastructure."
+        }
+      ],
+      "overall": {
+        "score": 98,
+        "summary": "The candidate demonstrated an outstanding understanding of fundamental and advanced full-stack web development concepts, including architecture, databases, APIs, scalability, and security. Their answers were consistently thorough, well-structured, and highly accurate."
+      }
+    },
+    "completedAt": 1759301141249
+  },
+  {
+    "id": "s-1759301321383",
+    "createdAt": 1759301376871,
+    "candidate": {
+      "name": "GANDHAM GUNASHEKAR",
+      "email": "shekar.df7@gmail.com",
+      "phone": "+91 7075298758"
+    },
+    "questions": [
+      {
+        "id": "q-0",
+        "text": "Can you explain the main differences between frontend and backend development in a web application?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-1",
+        "text": "What are some common technologies or frameworks you would typically use for the frontend and backend parts of a fullstack application?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-2",
+        "text": "Imagine you're building a new e-commerce application. How would you approach designing the API for product management, considering both RESTful principles and potential future scalability?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-3",
+        "text": "Describe a situation where you had to debug a performance issue that spanned both frontend and backend components. What steps did you take to identify and resolve it?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-4",
+        "text": "Design a real-time notification system for a social media application that needs to handle millions of concurrent users. What architectural patterns, technologies, and scaling strategies would you consider?",
+        "difficulty": "hard",
+        "timeLimit": 120
+      },
+      {
+        "id": "q-5",
+        "text": "Discuss the trade-offs between monolithic and microservices architectures for a fullstack application. When would you choose one over the other, and what are the associated challenges?",
+        "difficulty": "hard",
+        "timeLimit": 120
+      }
+    ],
+    "answers": {
+      "0": {
+        "text": "fsg"
+      },
+      "1": {
+        "text": "sfdgs"
+      },
+      "2": {
+        "text": "sfgs"
+      },
+      "3": {
+        "text": "sfgs"
+      },
+      "4": {
+        "text": "sfgs"
+      },
+      "5": {
+        "text": "dfgsfg"
+      }
+    },
+    "aiResult": {
+      "perAnswer": [
+        {
+          "index": 0,
+          "score": 0,
+          "feedback": "Answer provided was 'fsg' which is not a coherent response to the question."
+        },
+        {
+          "index": 1,
+          "score": 0,
+          "feedback": "Answer provided was 'sfdgs' which is not a coherent response to the question."
+        },
+        {
+          "index": 2,
+          "score": 0,
+          "feedback": "Answer provided was 'sfgs' which is not a coherent response to the question."
+        },
+        {
+          "index": 3,
+          "score": 0,
+          "feedback": "Answer provided was 'sfgs' which is not a coherent response to the question."
+        },
+        {
+          "index": 4,
+          "score": 0,
+          "feedback": "Answer provided was 'sfgs' which is not a coherent response to the question."
+        },
+        {
+          "index": 5,
+          "score": 0,
+          "feedback": "Answer provided was 'dfgsfg' which is not a coherent response to the question."
+        }
+      ],
+      "overall": {
+        "score": 0,
+        "summary": "The candidate did not provide any meaningful answers to the questions. All responses were incoherent character sequences, indicating a complete lack of engagement or understanding."
+      }
+    },
+    "completedAt": 1759301376868
+  },
+  {
+    "id": "s-1759301400484",
+    "createdAt": 1759301421895,
+    "candidate": {
+      "name": "GANDHAM GUNASHEKAR",
+      "email": "shekar.df7@gmail.com",
+      "phone": "+91 7075298758"
+    },
+    "questions": [
+      {
+        "id": "q-0",
+        "text": "What are the key differences between front-end and back-end development in a fullstack application?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-1",
+        "text": "Can you explain what RESTful APIs are and why they are commonly used in fullstack development?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-2",
+        "text": "Describe a typical workflow when building a new feature that involves both front-end and back-end changes. What steps do you follow?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-3",
+        "text": "How would you handle state management in a complex single-page application (SPA)? What are some common approaches?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-4",
+        "text": "Imagine you have a high-traffic web application. How would you design the system to ensure scalability and maintain high availability?",
+        "difficulty": "hard",
+        "timeLimit": 120
+      },
+      {
+        "id": "q-5",
+        "text": "Discuss different authentication and authorization strategies you might implement in a fullstack application. What are the trade-offs of each?",
+        "difficulty": "hard",
+        "timeLimit": 120
+      }
+    ],
+    "answers": {
+      "0": {
+        "text": "dadf"
+      },
+      "1": {
+        "text": "adf af"
+      },
+      "2": {
+        "text": "adf adf"
+      },
+      "3": {
+        "text": "adfadf"
+      },
+      "4": {
+        "text": "adfa df"
+      },
+      "5": {
+        "text": "dfadfa"
+      }
+    },
+    "aiResult": {
+      "perAnswer": [
+        {
+          "index": 0,
+          "score": 0,
+          "feedback": "The answer provided was not relevant to the question."
+        },
+        {
+          "index": 1,
+          "score": 0,
+          "feedback": "The answer was gibberish and did not address the question."
+        },
+        {
+          "index": 2,
+          "score": 0,
+          "feedback": "The response was not a coherent answer to the question."
+        },
+        {
+          "index": 3,
+          "score": 0,
+          "feedback": "The answer provided was irrelevant and did not demonstrate understanding."
+        },
+        {
+          "index": 4,
+          "score": 0,
+          "feedback": "The response was not a valid answer."
+        },
+        {
+          "index": 5,
+          "score": 0,
+          "feedback": "The answer was nonsensical and did not relate to the question."
+        }
+      ],
+      "overall": {
+        "score": 0,
+        "summary": "The candidate did not provide any relevant or coherent answers to the questions asked, indicating a complete lack of engagement or understanding of the technical topics."
+      }
+    },
+    "completedAt": 1759301421894
+  },
+  {
+    "id": "s-1759306266690",
+    "createdAt": 1759306445211,
+    "candidate": {
+      "name": "GANDHAM GUNASHEKAR",
+      "email": "shekar.df7@gmail.com",
+      "phone": "+91 7075298758"
+    },
+    "questions": [
+      {
+        "id": "q-0",
+        "text": "What are the key differences between frontend and backend development?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-1",
+        "text": "Can you explain what an API is and why it's crucial in fullstack development?",
+        "difficulty": "easy",
+        "timeLimit": 20
+      },
+      {
+        "id": "q-2",
+        "text": "Describe your approach to state management in a modern frontend framework like React or Angular.",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-3",
+        "text": "How do you ensure data consistency and integrity when building a fullstack application with multiple services or databases?",
+        "difficulty": "medium",
+        "timeLimit": 60
+      },
+      {
+        "id": "q-4",
+        "text": "Design a scalable architecture for a real-time notification system within a fullstack application, considering both frontend display and backend processing.",
+        "difficulty": "hard",
+        "timeLimit": 120
+      },
+      {
+        "id": "q-5",
+        "text": "A critical fullstack application is experiencing intermittent performance issues and database deadlocks. Outline your strategy for diagnosing, identifying the root cause, and resolving these complex problems.",
+        "difficulty": "hard",
+        "timeLimit": 120
+      }
+    ],
+    "answers": {
+      "0": {
+        "text": "Frontend development focuses on the user interface and experience (what the user sees and interacts with), using technologies like HTML, CSS, and JavaScript, while backend development handles the server, database, and application logic (the behind-the-scenes infrastructure), utilizing server-side languages and databases to power the application. The key difference lies in their concerns: frontend is client-side and user-facing, whereas backend is server-side and handles data and functionality.  \nFrontend Development\nPurpose: To build the visual and interactive components of a website or application that users see and interact with directly. \nResponsibilities: Designing and implementing user interfaces (UI), layouts, and features. \nTechnologies:\nHTML: (HyperText Markup Language) for content structure. \nCSS: (Cascading Style Sheets) for styling and visual presentation. \nJavaScript: for dynamic and interactive features. \nFrameworks and libraries like React, Angular, and Vue.js. \nFocus: User experience (UX), responsiveness across devices, and browser compatibility. \nBackend Development\nPurpose: To build and maintain the server-side infrastructure, including servers, application logic, and databases that support the frontend. \nResponsibilities: Handling data, user logins, sending emails, running database searches, and managing server logic. \nTechnologies:\nServer-side languages like Python, Node.js, Java, Ruby, and PHP. \nDatabases such as SQL and NoSQL. \nFocus: Data management, server performance, scalability, and security. \nHow They Work Together\nFrontend and backend development are two sides of the same coin, working in tandem to create a complete, functioning application. The frontend handles user input and presents information, while the backend receives those requests, processes data, and sends the necessary information back to the frontend to be displayed to the user.",
+        "submittedAt": 1759306287911
+      },
+      "1": {
+        "text": "An Application Programming Interface (API) is a set of defined rules and protocols that allows different software applications to communicate and interact with each other. It acts as an intermediary, specifying how software components should request and exchange information. Think of it as a menu in a restaurant: it lists what you can order (available functions), how to order it (request format), and what you can expect in return (response format).\nCruciality in Fullstack Development:\nAPIs are fundamental in fullstack development for several key reasons:\nEnabling Frontend-Backend Communication: In a fullstack application, the frontend (user interface) needs to interact with the backend (server-side logic and database). APIs provide the standardized mechanism for this communication. The frontend sends requests to the backend via API endpoints, and the backend processes these requests, retrieves/manipulates data, and sends responses back to the frontend.\nModularity and Separation of Concerns: APIs promote a clear separation between the frontend and backend. This modularity allows developers to work on each part independently, using different technologies if desired, and ensures that changes in one part are less likely to break the other, as long as the API contract is maintained.\nIntegration with Third-Party Services: Modern applications frequently integrate with external services like payment gateways (Stripe, PayPal), social media platforms (Facebook, Twitter), mapping services (Google Maps), or weather data providers. APIs are the standard way to access the functionalities and data offered by these third-party services, extending the application's capabilities without building everything from scratch.\nScalability and Reusability: APIs make applications more scalable by allowing different components to be developed and deployed independently. They also promote code reusability; a well-designed API can be consumed by multiple frontend clients (web, mobile, desktop) or even other backend services, reducing development effort.\nSimplified Development and Faster Time to Market: By providing a structured way to interact with different parts of an application or external services, APIs simplify the development process. Developers can leverage existing functionalities through APIs instead of reinventing the wheel, leading to faster development cycles and quicker deployment of new features.",
+        "submittedAt": 1759306312933
+      },
+      "2": {
+        "text": "The approach to state management in modern frontend frameworks like React or Angular often involves a combination of strategies, tailored to the application's scale and complexity.\nLocal Component State:\nFor state confined to a single component and not needed by others, the framework's built-in local state management is utilized.\nReact: The useState hook manages local state, providing a simple and efficient way to handle component-specific data.\nAngular: Component properties and methods, along with features like Input and Output decorators, manage local state and facilitate communication with parent components.\nProp Drilling Mitigation and Contextual State:\nWhen state needs to be shared among several components in a sub-tree without excessive prop drilling, contextual state management is employed.\nReact: The Context API is used to create and provide a context value to a component tree, allowing descendant components to consume the state without explicit prop passing at every level.\nAngular: Services are often used to centralize and manage state that needs to be shared across multiple components, injecting these services where needed.\nGlobal State Management for Complex Applications:\nFor larger applications with complex, global state requirements, a dedicated state management library or pattern is typically adopted.\nReact: Libraries like Redux (often with Redux Toolkit for simplified setup) or Zustand provide a centralized store, predictable state updates via reducers or actions, and tools for managing side effects (e.g., API calls) with middleware like Redux Thunk or Redux Saga.\nAngular: NgRx (a reactive state management library inspired by Redux) is a common choice, utilizing a store, actions, reducers, and effects to manage global application state in a reactive and predictable manner.\nReactive Programming Principles:\nModern state management often leverages reactive programming principles, especially in Angular, to handle data streams and asynchronous operations.\nAngular: Observables and RxJS are fundamental for managing data flows, asynchronous operations, and reacting to state changes. NgRx heavily relies on these concepts.\nPerformance Considerations:\nOptimizing performance is crucial. Techniques like memoization (e.g., useMemo and useCallback in React), immutable data structures, and careful management of side effects help prevent unnecessary re-renders and maintain application responsiveness.",
+        "submittedAt": 1759306389940
+      },
+      "3": {
+        "text": "Ensuring data consistency and integrity in a full-stack application with multiple services or databases requires a multi-faceted approach.\n1. Database-Level Mechanisms:\nACID Transactions: For operations within a single database, utilize Atomicity, Consistency, Isolation, and Durability (ACID) compliant transactions to guarantee that all operations within a transaction either complete successfully or are entirely rolled back, maintaining consistency.\nConstraints: Implement primary key, foreign key, unique, and check constraints to enforce data integrity rules directly within the database schema.\nData Types and Validation: Use appropriate data types for columns and implement data validation at the database level to ensure data conforms to expected formats and ranges.\n2. Application-Level Strategies:\nInput Validation: Implement robust input validation at the application layer (both front-end and back-end) to prevent malformed or malicious data from reaching the database.\nBusiness Logic Enforcement: Enforce business rules and data dependencies within the application logic, ensuring data consistency across different services.\nConcurrency Control: Employ optimistic or pessimistic locking mechanisms to manage concurrent access to shared data and prevent race conditions.\nEventual Consistency (for distributed systems): For operations across multiple services or databases where strong immediate consistency is not strictly required, consider eventual consistency models. This involves using message queues or event streams to propagate changes asynchronously, with mechanisms like compensating transactions to handle potential inconsistencies.\nChange Data Capture (CDC): Utilize CDC tools to capture and propagate data changes in near real-time across different databases or services, maintaining synchronization.\n3. Architectural Considerations:\nBounded Contexts: In microservices architectures, define clear bounded contexts to encapsulate data and logic, minimizing the need for distributed transactions.\nAPI Design: Design APIs to enforce data integrity rules and prevent inconsistent states.\nMonitoring and Auditing: Implement monitoring and logging to track data changes, detect anomalies, and facilitate auditing for compliance and troubleshooting.\nRegular Backups and Recovery: Establish a robust backup and recovery strategy to protect against data loss and enable restoration to a consistent state.",
+        "submittedAt": 1759306404852
+      },
+      "4": {
+        "text": "A scalable architecture for a real-time notification system in a fullstack application requires a robust backend for processing and a responsive frontend for display.\nBackend Architecture:\nNotification Triggering Service:\nThis service is responsible for identifying events that should trigger notifications (e.g., new message, user follow, system alert).\nIt publishes notification events to a message queue.\nMessage Queue (e.g., Kafka, RabbitMQ):\nActs as a buffer and ensures reliable, asynchronous delivery of notification events.\nDecouples the notification triggering service from the notification processing service, enhancing scalability and fault tolerance.\nNotification Processing Service:\nSubscribes to the message queue, consumes notification events.\nEnriches notification data (e.g., fetching user details, content information).\nDetermines notification delivery channels (e.g., in-app, email, push notification).\nStores notification data in a database (e.g., NoSQL for flexibility and scalability like MongoDB or Cassandra).\nReal-time Communication Service (e.g., WebSocket Server with Socket.IO, or a managed service like Pusher/Ably):\nManages persistent connections with connected clients (frontend applications).\nReceives notifications from the Notification Processing Service and broadcasts them to relevant clients based on user IDs or channel subscriptions.\nNotification API:\nProvides RESTful endpoints for the frontend to fetch historical notifications, mark notifications as read, or manage notification settings.\nFrontend Architecture:\nWebSocket Client:\nEstablishes and maintains a persistent WebSocket connection with the Real-time Communication Service.\nListens for incoming real-time notifications.\nHandles reconnection logic and potential connection errors.\nNotification Store/State Management:\nManages the state of notifications (e.g., unread count, list of notifications).\nUpdates the UI dynamically upon receiving new notifications.\nNotification UI Components:\nDisplays notifications in a user-friendly manner (e.g., a notification bell icon with an unread indicator, a notification list/feed).\nProvides functionality to interact with notifications (e.g., mark as read, navigate to content).\nAPI Integration:\nInteracts with the Notification API on the backend to fetch initial notification data, historical notifications, and update notification status.\nScalability Considerations:\nHorizontal Scaling: All backend services (Notification Triggering, Processing, Real-time Communication) should be designed to be horizontally scalable, allowing you to add more instances as traffic increases.\nDatabase Scaling: Choose a database system that can handle high read/write loads and scale effectively.\nMessage Queue: A robust message queue is crucial for handling high volumes of notification events.\nLoad Balancing: Use load balancers to distribute traffic across multiple instances of your services.\nCaching: Implement caching strategies for frequently accessed data to reduce database load.\nFrontend Performance: Optimize frontend rendering and data fetching to ensure a smooth user experience even with a large number of notifications.",
+        "submittedAt": 1759306417243
+      },
+      "5": {
+        "text": "To address intermittent full-stack performance issues and database deadlocks, your strategy should involve implementing robust monitoring and observability tools, profiling application components to find bottlenecks, analyzing database logs for deadlock patterns, and systematically validating changes. Begin by using distributed tracing to pinpoint slow requests, application performance monitoring (APM) to identify resource-intensive code, and database-specific monitoring tools to detect lock waits and deadlock graphs. Then, optimize slow queries, implement appropriate caching, tune database configurations, and refine application logic to eliminate race conditions causing deadlocks.\n1. Implement Comprehensive Monitoring & Observability\nDistributed Tracing: Use tools like Jaeger or Zipkin to visualize the flow of requests across the entire stack, from the front end to the database, and identify which services or components are introducing latency. \nApplication Performance Monitoring (APM): Deploy APM solutions to gather detailed metrics on application performance, including response times, error rates, and resource utilization (CPU, memory) for each component. \nDatabase Monitoring: Utilize database-native tools or third-party solutions to monitor query performance, active connections, lock waits, and deadlocks. \nLog Aggregation: Collect and analyze logs from all application components and the database to correlate events and identify error patterns.\n2. Diagnose Performance Bottlenecks \nRequest Tracing Analysis: Review distributed traces to identify slow endpoints, services, or database queries that are frequently part of performance degradation.\nProfiling: Use code profilers for the back-end to find inefficient functions or sections of code that are consuming excessive CPU or memory resources.\nDatabase Performance Metrics: Examine database metrics for slow queries (e.g., long-running SQL statements), high query latency, excessive disk I/O, or high CPU usage.\nResource Utilization Monitoring: Correlate application and database performance issues with high resource utilization on the servers or database instances.\n3. Identify Root Causes of Deadlocks \nAnalyze Deadlock Graphs: Examine the output of database deadlock monitoring tools to understand the sequence of events and the specific queries or transactions that caused the deadlock.\nReview Application Logic: Look for areas in the code where multiple transactions access shared resources concurrently without proper coordination.\nTransaction Isolation Levels: Check if the database transaction isolation levels are appropriate for the application's needs, as overly strict or loose levels can sometimes contribute to deadlocks.\nCheck for Lock Escalation: Investigate if locks are being escalated from row-level to page-level or table-level, which can increase the likelihood of deadlocks.\n4. Develop & Implement Solutions\nQuery Optimization: Refactor inefficient SQL queries, add appropriate indexes, and consider query hints or execution plan analysis to improve database performance.\nCaching: Implement or improve caching strategies for frequently accessed data to reduce database load, but ensure proper cache invalidation to prevent stale data issues. \nOptimize Concurrency:\nReduce Transaction Scope: Shorten the duration of transactions and keep them as narrow as possible to reduce the time locks are held. \nControl Access Order: Enforce a consistent order for acquiring locks to avoid cyclic dependencies that lead to deadlocks.\nUse SELECT FOR UPDATE with Caution: Be mindful of how and when you use SELECT FOR UPDATE (or equivalent) to avoid holding locks for longer than necessary.\nRefactor Code: Redesign critical application logic to minimize resource contention or use more robust concurrency control mechanisms. \nConfiguration Tuning: Adjust database configuration parameters (e.g., connection pool sizes, buffer sizes) and application server settings to optimize resource allocation.\n5. Validate and Monitor\nDeploy Changes Incrementally: Roll out fixes gradually and monitor the system closely to ensure they resolve the issues without introducing new ones.\nContinuous Monitoring: Continue to monitor performance and deadlock metrics after deploying changes to confirm the problem is resolved and to detect any future regressions.\nAutomated Alerts: Set up alerts for key performance indicators and deadlock occurrences to enable immediate response to future incidents.",
+        "submittedAt": 1759306433353
+      }
+    },
+    "aiResult": {
+      "perAnswer": [
+        {
+          "index": 0,
+          "score": 10,
+          "feedback": "Excellent and thorough explanation covering all key aspects, including purpose, responsibilities, technologies, and how they interact, for both frontend and backend development."
+        },
+        {
+          "index": 1,
+          "score": 10,
+          "feedback": "Clear and concise definition of an API, supported by a good analogy. The explanation of its cruciality in fullstack development is comprehensive and well-structured."
+        },
+        {
+          "index": 2,
+          "score": 10,
+          "feedback": "A very detailed and well-structured answer, addressing different levels of state management (local, contextual, global) with specific examples for both React and Angular, and including important considerations like reactive principles and performance."
+        },
+        {
+          "index": 3,
+          "score": 9,
+          "feedback": "A comprehensive answer covering database-level, application-level, and architectural strategies. It clearly outlines several effective methods for ensuring data consistency and integrity in complex systems."
+        },
+        {
+          "index": 4,
+          "score": 9,
+          "feedback": "A robust and well-structured architectural design for a real-time notification system, clearly separating backend and frontend concerns. It effectively leverages modern real-time technologies and thoughtfully addresses scalability considerations."
+        },
+        {
+          "index": 5,
+          "score": 10,
+          "feedback": "An excellent, systematic, and comprehensive strategy for diagnosing and resolving complex performance issues and database deadlocks. The proposed steps cover a wide range of tools, analysis techniques, and solution types."
+        }
+      ],
+      "overall": {
+        "score": 97,
+        "summary": "The candidate demonstrates exceptional knowledge across a wide range of fullstack development topics, from fundamental concepts to complex architectural design and troubleshooting. Their answers are consistently detailed, well-structured, and provide specific examples and strategies, indicating a deep understanding and practical experience."
+      }
+    },
+    "completedAt": 1759306445207
+  }
+]
