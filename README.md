@@ -104,10 +104,19 @@ node server.js
 - VITE_API_URL=https://your-service-name.onrender.com
 - Render automatically serves the React build from /backend/public and proxies API calls to Express.
 
-
+---
 ## 📸 Screenshots
+<img width="1918" height="912" alt="Screenshot 2025-10-02 121718" src="https://github.com/user-attachments/assets/5bf70ab8-6aa0-4c11-b44a-f7bbf758d684" />
+<img width="1919" height="912" alt="Screenshot 2025-10-02 121823" src="https://github.com/user-attachments/assets/6e46f6fb-c861-4f8d-9fe7-af7e7466f816" />
+<img width="1918" height="909" alt="Screenshot 2025-10-02 121755" src="https://github.com/user-attachments/assets/683d2d4b-5939-46c2-a1aa-59520c29970b" />
+<img width="1901" height="921" alt="Screenshot 2025-10-02 121733" src="https://github.com/user-attachments/assets/bfe7540e-d2b9-4321-9130-1c85ad0d178b" />
+<img width="1919" height="904" alt="Screenshot 2025-10-02 122335" src="https://github.com/user-attachments/assets/33dc691e-ea47-4324-93e9-073ff60d8a0f" />
+<img width="1919" height="914" alt="Screenshot 2025-10-02 122126" src="https://github.com/user-attachments/assets/e3b80e94-9697-4c07-9937-978590d44444" />
+<img width="1919" height="904" alt="Screenshot 2025-10-02 122114" src="https://github.com/user-attachments/assets/9a09970c-ca6d-4e28-bb37-9b85510a5f24" />
+<img width="1919" height="916" alt="Screenshot 2025-10-02 121849" src="https://github.com/user-attachments/assets/1fa06430-4611-494f-9c4d-090aa8f733ab" />
+<img width="1917" height="904" alt="Screenshot 2025-10-02 121836" src="https://github.com/user-attachments/assets/0324cd47-36c3-4153-a9e2-b4d33e6c5f03" />
 
-
+---
 ## 🤝 Contributing
 - Fork the repo
 - Create a new branch (feature-xyz)
