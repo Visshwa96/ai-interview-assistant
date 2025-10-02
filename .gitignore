@@ -22,3 +22,6 @@ backend/.env
 .vscode
 backend_backup
 
+
+# Ignore built frontend public output
+backend/public
