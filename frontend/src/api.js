@@ -4,8 +4,9 @@ import axios from 'axios';
 
 // Vite exposes env vars that start with VITE_ via import.meta.env
 // If VITE_API_URL is undefined or empty, API_BASE will be '' and axios will use relative URLs.
-const API_BASE = import.meta.env.VITE_API_URL ?? ''; 
+export const API_BASE = import.meta.env.VITE_API_URL ?? '';
 
+// axios instance — use relative paths when API_BASE is empty
 const base = axios.create({
   baseURL: API_BASE, // '' -> requests like '/health' go to same origin; 'https://...' -> absolute
   timeout: 30000,

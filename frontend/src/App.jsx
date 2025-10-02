@@ -5,6 +5,7 @@ import TopNav from './components/TopNav';
 import InterviewPage from './pages/InterviewPage';
 import DashboardPage from './pages/DashboardPage';
 import './App.css';
+import { API_BASE } from './api';
 
 const { Content, Footer } = Layout;
 
@@ -14,7 +15,7 @@ export default function App() {
   useEffect(() => {
     const checkHealth = async () => {
       try {
-        const res = await fetch('http://localhost:4000/health', { cache: 'no-store' });
+        const res = await fetch(`${API_BASE}/health`, { cache: 'no-store' });
         if (!res.ok) throw new Error('Network response not ok');
         const data = await res.json();
         setBackendUp(Boolean(data?.ok));
@@ -38,7 +39,7 @@ export default function App() {
           ) : backendUp === false ? (
             <Alert
               message="Backend Unreachable"
-              description="The backend server is not responding at http://localhost:4000. Ensure the backend is running."
+              description={`The backend server is not responding${API_BASE ? ' at ' + API_BASE : ''}. Ensure the backend is running.`}
               type="error"
               showIcon
             />
