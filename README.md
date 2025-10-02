@@ -58,33 +58,33 @@ git clone https://github.com/Guna1610/ai-interview-assistant.git
 cd ai-interview-assistant
 ```
 
-2. Setup Backend
+### 2. Setup Backend
 ```
 cd backend
 npm install
 ```
-Create a .env file in backend/ with:
-GEMINI_API_KEY=your_google_gemini_api_key
-NODE_ENV=production
-Run locally:
+- Create a .env file in backend/ with:
+- GEMINI_API_KEY=your_google_gemini_api_key
+- NODE_ENV=production
+### Run locally:
 ```
 node server.js
 ```
 
-3. Setup Frontend
+### 3. Setup Frontend
 ```
 cd ../frontend
 npm install
 ```
-Create .env in frontend/:
-VITE_API_URL=http://localhost:4000
-Run locally:
+- Create .env in frontend/:
+- VITE_API_URL=http://localhost:4000
+### Run locally:
 ```
 npm run dev
 ```
-Visit: http://localhost:5173
+- Visit: http://localhost:5173
 
-🌐 Deployment on Render
+## 🌐 Deployment on Render
 This repo is already configured for monorepo deployment:
 
 Build Command:
@@ -97,22 +97,21 @@ Start Command:
 node server.js
 ```
 
-Environment Variables (Render Dashboard → Environment):
+### Environment Variables (Render Dashboard → Environment):
 
-GEMINI_API_KEY=your_google_gemini_api_key
-NODE_ENV=production
-VITE_API_URL=https://your-service-name.onrender.com
-Render automatically serves the React build from /backend/public and proxies API calls to Express.
+- GEMINI_API_KEY=your_google_gemini_api_key
+- NODE_ENV=production
+- VITE_API_URL=https://your-service-name.onrender.com
+- Render automatically serves the React build from /backend/public and proxies API calls to Express.
 
 
-📸 Screenshots
-(Add screenshots/gifs of upload, interview, and dashboard here)
+## 📸 Screenshots
 
-🤝 Contributing
-Fork the repo
-Create a new branch (feature-xyz)
-Commit changes and push
-Open a Pull Request
 
-📜 License
-MIT License © 2025 [Your Name]
+## 🤝 Contributing
+- Fork the repo
+- Create a new branch (feature-xyz)
+- Commit changes and push
+- Open a Pull Request
+
+
