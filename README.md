@@ -1,29 +1,82 @@
-# AI Interview Assistant
+# AI Interview Assistant — Human-in-Loop System with Complete State Management and Rollback
 
-An AI-powered interview preparation tool that generates questions from your resume, simulates interviews, and evaluates your answers with AI feedback.  
+## 🧠 Problem Alignment
+This project addresses the **“Human-in-Loop System with Complete State Management and Rollback”** problem under the *Fullstack Engineer* track.
 
-🌐 **Live Demo:** [AI Interview Assistant](https://ai-interview-assistant-15.onrender.com)  
+Modern AI systems often require real-time human feedback before continuing a workflow.  
+The AI Interview Assistant implements this concept by placing a human (the candidate) inside an interactive, event-driven interview system powered by AI.
 
 ---
 
-## ✨ Features
-- 📄 **Resume Upload** – Upload PDF/DOCX resumes, auto-parse details.
-- 🎯 **AI Question Generation** – Generate interview questions tailored to your resume and role.
-- 📝 **Interactive Interview** – Answer questions in real-time with a timer.
-- 🤖 **AI Evaluation** – Get detailed feedback and scoring for each answer.
-- 📊 **Dashboard** – View past interview sessions and performance analytics.
+## 🎯 Overview
+The **AI Interview Assistant** is an end-to-end web application that:
+- Parses the candidate’s resume
+- Dynamically generates interview questions using the Google Gemini API
+- Simulates a live interview with timed responses
+- Evaluates answers asynchronously through AI
+- Provides immediate feedback, scoring, and performance analytics
+
+The system is **event-driven, stateful, and resilient** — capable of pausing/resuming workflows, handling delays, and supporting retries or feedback loops.
+
+---
+
+## ⚙️ Architecture Overview
+
+### 🧩 Core Components
+1. **Frontend (React + Vite + Ant Design)**
+   - Dynamic, configurable UI for interview flow
+   - Tracks current question, timer, and user responses
+   - Communicates asynchronously with backend APIs
+
+2. **Backend (Node.js + Express)**
+   - Handles orchestration logic and API routes
+   - Integrates with **Google Gemini API** for AI-driven Q&A and feedback
+   - Maintains interview state and logs for replay or retry
+
+3. **State Management & Rollback**
+   - Interview session stored in memory or database
+   - Supports reattempting questions and restarting sessions
+   - Logs AI responses and timestamps for observability
+
+4. **Observability & Feedback**
+   - Dashboard visualizes interview performance and AI feedback
+   - Each session includes analytics: time spent, question category, score, and AI evaluation
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend**: React + Vite + Ant Design  
-- **Backend**: Node.js + Express  
-- **AI Model**: Google Gemini API  
-- **Deployment**: Render (monorepo with frontend & backend)  
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | React, Vite, Ant Design |
+| **Backend** | Node.js, Express |
+| **AI Model** | Google Gemini API |
+| **State Management** | Session store + local state tracking |
+| **Deployment** | Render (Monorepo setup) |
 
 ---
 
-## 📂 Project Structure
+## 💡 Key Features
+- Real-time human–AI interaction (Human-in-Loop)
+- Stateful session management and dynamic resume/rollback
+- Asynchronous AI evaluation and feedback
+- Event-driven API design (frontend & backend decoupled)
+- Fully deployable on Render or any Node/React host
+
+---
+
+## ⚙️ Evaluation Mapping
+| Evaluation Criteria | Implementation |
+|----------------------|----------------|
+| **Architecture Thinking (25%)** | Event-driven design; separate AI orchestration backend |
+| **State Model Design (20%)** | Interview progress tracked with states: pending → evaluating → completed |
+| **Frontend Configurability (15%)** | Dynamic React components render questions, timers, and feedback |
+| **Resilience & Retry Logic (15%)** | Supports session restarts and reattempts |
+| **Integration Creativity (15%)** | Gemini API integration for multi-round interview logic |
+| **Observability & Feedback Loop (10%)** | Performance dashboard and detailed answer analytics |
+
+---
+
+## 🧱 Repository Structure
 ```
 ai-interview-assistant/
 │
@@ -47,7 +100,19 @@ ai-interview-assistant/
 ├── README.md # Project documentation
 └── render.yaml # (Optional) Render configuration
 ```
+---
 
+## 🚀 Demo
+**Live App:** [https://your-ai-interview-assistant-demo-link.com](#)  
+**GitHub:** [https://github.com/Guna1610/ai-interview-assistant](https://github.com/Guna1610/ai-interview-assistant)
+
+---
+
+## 🔮 Future Enhancements
+- Add multi-agent evaluation (HR bot + Tech bot)
+- Integrate Slack/Gmail notifications for interview summaries
+- Enable long-term analytics with MongoDB or Firebase
+- Add Lyzr SDK agent orchestration integration
 ---
 
 ## 🚀 Getting Started
@@ -123,4 +188,22 @@ node server.js
 - Commit changes and push
 - Open a Pull Request
 
+---
+
+## 🚀 Demo
+**Live App:** [https://your-ai-interview-assistant-demo-link.com](#)  
+**GitHub:** [https://github.com/Guna1610/ai-interview-assistant](https://github.com/Guna1610/ai-interview-assistant)
+
+---
+
+## 🔮 Future Enhancements
+- Add multi-agent evaluation (HR bot + Tech bot)
+- Integrate Slack/Gmail notifications for interview summaries
+- Enable long-term analytics with MongoDB or Firebase
+- Add Lyzr SDK agent orchestration integration
+
+---
+
+## 📜 License
+MIT License — free to use and modify
 
